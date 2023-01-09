@@ -1,0 +1,53 @@
+#personalheading {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: rgb(105, 149, 237);
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+footer {
+    background-color: rgb(100, 149, 237);
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 500px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#profilepic {
+    max-height: 15em;
+    max-width: 25em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+#profilebox {
+    margin: auto 0 auto 10px;
+}
+
+#name {
+    margin: 50px 50px 50px 0;
+    font-size: 1.2em;
+}
+
+#portaltitle {
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+#lessonlist {
+    margin: 5px 0 10px 10px;
+    width: 380px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* This block removes the dots from the list */
+ul {
+    list-style-type: none;
+}
