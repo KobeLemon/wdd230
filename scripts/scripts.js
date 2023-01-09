@@ -1,3 +1,4 @@
+
 // this finds the element with the id of "date"
 const date = document.querySelector("#date");
 
