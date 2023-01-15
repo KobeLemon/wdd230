@@ -1,4 +1,5 @@
 
-This is the link to my GitHub Pages page. I put it into this text file so I can easily access that page instead of trying to hunt down the link every time I need it.
+This is the link to my GitHub Pages page. 
+I put it into this text file so I can easily access that page instead of trying to hunt down the link every time I need it.
 
 https://kobelemon.github.io/wdd230/
