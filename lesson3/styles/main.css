@@ -1,0 +1,178 @@
+/* Generic Styling -- This styling applies to more than one page*/
+
+html {
+    background-color: #fffff0;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    border-radius: 5px;
+    background-color: #00006c;
+    color: #5ad18a;
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    padding: 5px;
+    text-align: center;
+}
+
+nav {
+    background-color: #00006c;
+    color: #5ad18a;
+    border-radius: 5px;
+}
+
+nav a {
+    color: #5ad18a;
+    font-size: 1.2rem;
+}
+
+a:hover { 
+    background-color: #368154;
+    box-shadow: 0 0 5px rgba(50,50,50,0.8);
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Serif Display', 'PT Serif', serif;
+    letter-spacing: 1px;
+}
+
+a, p, ol {
+    font-family: 'Noto Sans', 'PT Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+header > h1 {
+    font-size: 3em;
+}
+
+header > h2 {
+    font-size: 2.3em;
+}
+
+body {
+    margin: 10px auto;
+    width: 80%;
+}
+
+a:link {
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+.section-title {
+    font-weight: bolder;
+    color: #368154;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#site-purpose-description, #target-audience-description, img {
+    margin: 20px;
+}
+
+p {
+    line-height: 25px;
+}
+ol > li {
+    line-height: 35px;
+}
+
+footer {
+    background-color: #00006c;
+    border-radius: 5px;
+    padding: 10px;
+    color: #5ad18a;
+    box-shadow: 0 0 15px rgba(50,50,50,0.8);
+    text-align: center;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* Design Page -- this styling only applies to the design.html file */
+
+table {
+    border-spacing: 0;
+    border: 1px solid black;
+    margin: auto;
+}
+
+td {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#title-row {
+    font-size: 2em;
+    background-color: #00006c;
+    color: #5ad18a;
+}
+
+#header-sample {
+    font-size: 3em;
+    color: #247620
+}
+
+#primary-nav-sample, #footer-sample {
+    font-size: 1.4em;
+    background-color: #247620;
+    color: white;
+}
+
+#h1-sample {
+    font-size: 2em;
+}
+
+#h2-sample {
+    font-size: 1.5em;
+}
+
+#h3-sample {
+    font-size: 1.4em;
+}
+
+.green-bgcolor {
+    background-color: #247620;
+    color: white;
+}
+
+.headings-fontcolor {
+    color: #033c92;
+}
+
+.headings-table-bgcolor {
+    background-color: #033c92;
+    color: white;
+}
+
+#paragraph-table-bgcolor {
+    background-color: #5C5043;
+    color: white;
+}
+
+#paragraph-fontcolor {
+    color: #5C5043;
+}
