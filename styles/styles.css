@@ -2,6 +2,10 @@ html {
     background-color: rgb(255,255,240);
 }
 
+main {
+    padding-bottom: 120px;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -26,6 +30,8 @@ p, a {
 body {
     margin: 10px auto;
     width: 60%;
+    position: relative;
+    min-height: 100vh;
 }
 
 #profilepic {
@@ -71,4 +77,8 @@ footer {
     text-align: center;
     font-size: 0.75em;
     letter-spacing: 1px;
+    height: 90px;
+    width: 98%;
+    position: absolute;
+    bottom: 0;
 }

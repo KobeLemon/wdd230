@@ -23,7 +23,6 @@
     #name {
         font-size: 2.75em;
         margin: auto;
-        /* padding-bottom: 20px; */
         width: fit-content;
     }
 
@@ -39,5 +38,11 @@
 
     a p {
         line-height: 10px;
+    }
+
+    footer {
+        /* margin-left: 10px; */
+        margin: auto;
+        width: 95%;
     }
 }
