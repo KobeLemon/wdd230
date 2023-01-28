@@ -1,0 +1,150 @@
+/* 64rem is also 1028px when basefont is 16px */
+@media only screen and (min-width: 1028px) {
+
+    /* Styling of the Header and its descendants */
+    header {
+        justify-content: flex-start;
+        column-gap: 2.5rem
+    }
+
+    .headerLogo {order: 0;}
+    .headerTitle{order: 1;}
+    #navbar {order: 2; margin-left: auto;}
+    .socialMediaLinks {order: 3; margin-right: auto;}
+    #currentDate {order: 4;}
+
+    .cityName {
+        font-size: 3rem;
+        margin-bottom: 0rem;
+    }
+
+    .chamberName {
+        font-size: 1.5rem;
+    }
+
+    #primaryNav {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    nav button {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 2rem;
+    }
+
+    nav ul li {
+        font-size: 1.5rem;
+        border-bottom: 0px;
+    }
+
+    nav ul li a:hover, .socialMediaLinks a:hover{
+        background-color: rgba(0,0,0,0.3);
+        padding: 0.3rem;
+        border-radius: 0.4em;
+    }
+
+    #currentDate {
+        font-size: 1.5rem;
+    }
+    
+    /* End of Header Styling */
+
+    /* Main Content Styling */
+    .content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 15rem);
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .tile {
+        margin-top: 0rem;
+        height: 100%;
+    }
+
+    .heroBanner {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }    
+
+    .events {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .join {
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    }
+
+    .news {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+
+    #spotlightBox {
+        flex-direction: column;
+        gap: 1rem;
+        grid-column: 4/5;
+        grid-row: 1/-1;
+        height: 100%;
+    }
+
+    .spotlights {
+        margin: auto;
+    }
+    /* End of Main Content Styling */
+
+    /* Footer Styling */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    footer figure {
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .footerTitle {
+        display: flex;
+        column-gap: 0.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .chamberAddress {
+        margin-top: 0rem;
+    }
+
+    .footerBox1 {
+        text-align: left;
+        margin-right: auto;
+    }
+        
+    .footerBox2 {
+        margin-left: 3rem;
+        margin-right: 10rem;
+    }
+
+    .footerBox3 {
+        display: flex;
+        font-size: 0.8rem;
+        margin: auto;
+        gap: 0.5rem;
+    }
+    /* End of Footer Styling */
+
+}

@@ -1,0 +1,131 @@
+/* 35rem is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    /* Styling of the Header and its descendants */
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .headerTitle {
+        display: block;
+        margin-right: auto;
+    }
+
+    .cityName {
+        font-size: 2rem;
+    }
+    .headerLogo {
+        width: 8rem;
+    }
+
+    .socialMediaLinks {
+        flex-direction: row;
+        margin-right: auto;
+    }
+    
+    .socialLogo {
+        max-height: 2rem;
+        max-width: 2rem;
+    }
+
+    #hamburgerBtn {
+        margin-right: auto;
+    }
+
+    nav ul {
+        margin-left: 40%;
+    }
+
+    #currentDate {
+        font-size: 1.5rem;
+    }
+
+    /* End of Header Styling */
+
+    /* Main Content Styling */
+    .content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(5, 15rem);
+        gap: 1rem;
+        margin: 1rem 0px;
+    }
+
+    .tile {
+        margin-top: 0rem;
+    }
+
+    .mediumColumn1 {
+        grid-column: 1/-1;
+    }
+
+    .heroBanner {
+        grid-row: 1/2;
+    }    
+
+    .news {
+        grid-row: 2/3;
+    }
+
+    #spotlightBox {
+        display: flex;
+        flex-direction: row;
+        grid-row: 3/4;
+        margin-top: auto;
+        gap: 1rem;
+        height: 100%;
+    }
+
+    .spotlights {
+        margin: 0rem;
+    }
+
+    .join {
+        grid-row: 4/5; 
+    }
+
+    .events {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .weather {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    /* End of Main Content Styling */
+
+    /* Footer Styling */
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+
+    footer figure {
+        margin-left: 0em;
+        margin-right: 0.2rem;
+    }
+
+    .footerBox1 {
+        text-align: left;
+    }
+        
+    .footerBox2 {
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    .footerBox3 {
+        font-size: 0.8rem;
+    }
+    /* End of Footer Styling */
+
+}

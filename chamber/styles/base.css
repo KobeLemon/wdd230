@@ -1,0 +1,182 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    width: 100%;
+}
+
+/* Styling of the Header and its descendants */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #247620;
+    padding-top: 0.8em;
+    color: white;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+.cityName {
+    font-size: 1.75rem;
+    margin-bottom: 0rem;
+}
+
+.chamberName {
+    font-size: 1rem;
+}
+
+.logoImg {
+    width: 6rem;
+    margin-left: 0.8rem;
+}
+
+.socialMediaLinks {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0;
+    gap: 0.6rem;
+}
+
+.socialLogo {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+}
+
+nav {
+    background-color: #247620;
+    height: fit-content;
+}
+
+nav button {
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+nav ul li {
+    margin-top: 0.8rem;
+    font-size: 2rem;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    padding-bottom: 0.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#hamburgerBtn {
+    background-color: #1d5e19; 
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+nav ul {display: none;}
+
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block; color: white;}
+#hamburgerBtn span:nth-child(2) {display: none; color: white;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none; color: white;}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+    color: white;
+    background-color: #247620;
+    padding: 0.3rem;
+    border-radius:0.5rem;
+    width: fit-content;
+    margin: 0.5rem;
+}
+
+#navbar.open {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 20rem;
+    margin: auto;
+    background-color: #1d5e19;
+    margin-bottom: 0.8rem;
+    align-items: flex-start;
+}
+
+#currentDate {
+    padding: 0.8rem;
+    margin: auto auto 10px auto;
+    background-color: #1d5e19;
+    border-radius: 0.5rem;
+    width: 99%;
+    text-align: center;
+} 
+/* End of Header Styling */
+
+/* Main Content Styling */
+
+p, a {font-family: 'Noto Sans', 'PT Sans', sans-serif; color: #5C5043;}
+h1, h2, .cityName, .chamberName {font-family: 'Noto Serif Display', 'PT Serif', serif;}
+
+.content {
+    margin-bottom: 1rem;
+}
+.tile {
+    padding: 0.8rem;
+    background-color: lightgray;
+    font-size: 1.5rem;
+    height: 15rem;
+    border: 1px solid #313131;
+}
+
+#spotlightBox {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spotlights {
+    border: 1px solid #313131;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+/* End of Main Content Styling */
+
+/* Footer Styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #247620;
+    padding-top: 0.8em;
+    color: white;
+    text-align: center;
+}
+
+.footerLogo {
+    width: 9rem;
+}
+
+.footerTitle {
+    margin-top: 0px;
+}
+
+hr {
+    color: #5C5043;
+    width: 90%;
+    font-size: large;
+}
+/* End of Footer Styling */
