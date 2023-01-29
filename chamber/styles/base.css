@@ -139,7 +139,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif Display', 'PT Serif', 
     background-color: white;
     font-size: 1.5rem;
     height: 15rem;
-    /* border: 1px solid #313131; */
+    border-radius: 0.8rem;
     color: #033c92;
     text-align: center;
 }

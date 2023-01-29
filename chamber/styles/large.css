@@ -30,22 +30,39 @@
     nav button {
         display: none;
     }
+
+    nav {
+        background-color: #1d5e19;
+        margin-right: 0px;
+        margin-left: 0rem;
+        border-radius: 0.7rem;
+    }
     
     nav ul {
         display: flex;
-        justify-content: space-evenly;
-        column-gap: 2rem;
     }
 
     nav ul li {
         font-size: 1.5rem;
         border-bottom: 0px;
+        width: 100%;
+        padding: 1rem;
+        margin: 0rem;
     }
 
-    nav ul li a:hover, .socialMediaLinks a:hover{
+    #primaryNav {
+        margin: 0rem;
+    }
+
+    nav ul li:hover {
         background-color: #033c92;
+        border-radius: 0.7rem;
+    }
+    
+    .socialMediaLinks a:hover{
+        background-color: #033c92;
+        border-radius: 0.7rem;
         padding: 0.3rem;
-        border-radius: 0.4em;
     }
 
     .socialLogo {
