@@ -1,4 +1,5 @@
-// open & close the hamburger menu when in small view
+// open & close the hamburger menu when in small & tablet views
+// could also be rewritten to do the same thing but when the button is hovered
 function toggleMenu() {
     console.log("Hamburger Button clicked")
     document.getElementById("primaryNav").classList.toggle("open");

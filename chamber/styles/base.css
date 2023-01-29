@@ -1,5 +1,5 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #c0a88f;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -37,18 +37,20 @@ header {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin: 0;
-    gap: 0.6rem;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .socialLogo {
-    max-height: 1.5rem;
-    max-width: 1.5rem;
+    max-height: 1.99rem;
+    max-width: 1.99rem;
 }
 
 nav {
     background-color: #247620;
     height: fit-content;
+    margin: auto;
+    width: fit-content;
 }
 
 nav button {
@@ -60,9 +62,8 @@ nav button {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: auto;
-    width: fit-content;
     text-align: center;
+    margin-top: 0rem;
 }
 
 nav ul li {
@@ -81,6 +82,12 @@ nav ul li a {
     background-color: #1d5e19; 
     border-radius: 0.5rem;
     width: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+#hamburgerBtn.open {
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
 }
 
 nav ul {display: none;}
@@ -97,19 +104,16 @@ nav ul.open {display: block;}
     background-color: #247620;
     padding: 0.3rem;
     border-radius:0.5rem;
-    width: fit-content;
-    margin: 0.5rem;
 }
 
 #navbar.open {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     width: 100%;
     height: 20rem;
-    margin: auto;
     background-color: #1d5e19;
     margin-bottom: 0.8rem;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #currentDate {
@@ -132,10 +136,12 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif Display', 'PT Serif', 
 }
 .tile {
     padding: 0.8rem;
-    background-color: lightgray;
+    background-color: white;
     font-size: 1.5rem;
     height: 15rem;
-    border: 1px solid #313131;
+    /* border: 1px solid #313131; */
+    color: #033c92;
+    text-align: center;
 }
 
 #spotlightBox {
@@ -146,11 +152,13 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif Display', 'PT Serif', 
 }
 
 .spotlights {
-    border: 1px solid #313131;
+    border: 1px solid #033c92;
+    background-color: lightgray;
     font-size: 1.5rem;
     height: 100%;
     width: 100%;
     padding: 0.8rem;
+    margin: 0.5rem auto 0.5rem auto;
 }
 
 /* End of Main Content Styling */
@@ -173,6 +181,11 @@ footer {
 .footerTitle {
     margin-top: 0px;
 }
+
+/* .footerBox1 {
+    display: flex;
+    flex-direction: row;
+} */
 
 hr {
     color: #5C5043;

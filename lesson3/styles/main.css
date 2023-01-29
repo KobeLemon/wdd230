@@ -46,7 +46,7 @@ img {
     box-shadow: 0 0 15px rgba(50,50,50,0.8);
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -62,7 +62,7 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
-a, p, ol {
+a, p, ul {
     font-family: 'Noto Sans', 'PT Sans', sans-serif;
     letter-spacing: 1px;
 }
@@ -93,6 +93,12 @@ a:link {
     font-weight: bolder;
     color: #368154;
     font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #368154;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -157,7 +163,8 @@ td, th {
 
 #header-sample {
     font-size: 3em;
-    color: #247620
+    background-color: #247620;
+    color: white;
 }
 
 #primary-nav-sample, #footer-sample {

@@ -43,11 +43,16 @@
     }
 
     nav ul li a:hover, .socialMediaLinks a:hover{
-        background-color: rgba(0,0,0,0.3);
+        background-color: #033c92;
         padding: 0.3rem;
         border-radius: 0.4em;
     }
 
+    .socialLogo {
+        max-height: 3rem;
+        max-width: 3rem;
+    }
+    
     #currentDate {
         font-size: 1.5rem;
     }
