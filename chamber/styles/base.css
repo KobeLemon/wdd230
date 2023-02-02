@@ -129,7 +129,7 @@ nav ul.open {display: block;}
 /* Main Content Styling */
 
 p, a {font-family: 'Noto Sans', 'PT Sans', sans-serif; color: #5C5043;}
-h1, h2, .cityName, .chamberName {font-family: 'Noto Serif Display', 'PT Serif', serif;}
+h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 .content {
     margin-bottom: 1rem;
