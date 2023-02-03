@@ -14,7 +14,7 @@ header {
     align-items: center;
     background-color: #247620;
     padding-top: 0.8em;
-    color: white;
+    color: whitesmoke;
     flex-wrap: wrap;
     column-gap: 1rem;
 }
@@ -75,7 +75,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
 }
 
 #hamburgerBtn {
@@ -94,13 +94,13 @@ nav ul {display: none;}
 
 nav ul.open {display: block;}
 
-#hamburgerBtn span:nth-child(1) {display: block; color: white;}
-#hamburgerBtn span:nth-child(2) {display: none; color: white;}
+#hamburgerBtn span:nth-child(1) {display: block; color: whitesmoke;}
+#hamburgerBtn span:nth-child(2) {display: none; color: whitesmoke;}
 
-#hamburgerBtn.open span:nth-child(1) {display: none; color: white;}
+#hamburgerBtn.open span:nth-child(1) {display: none; color: whitesmoke;}
 #hamburgerBtn.open span:nth-child(2) {
     display: block;
-    color: white;
+    color: whitesmoke;
     background-color: #247620;
     padding: 0.3rem;
     border-radius:0.5rem;
@@ -136,7 +136,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 .tile {
     padding: 0.8rem;
-    background-color: white;
+    background-color: whitesmoke;
     font-size: 1.5rem;
     height: 15rem;
     border-radius: 0.8rem;
@@ -170,7 +170,7 @@ footer {
     align-items: center;
     background-color: #247620;
     padding-top: 0.8em;
-    color: white;
+    color: whitesmoke;
     text-align: center;
 }
 

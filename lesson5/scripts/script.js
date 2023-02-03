@@ -1,13 +1,16 @@
-const input = document.querySelector('#favchap').value;
 const list = document.querySelector('.favList');
 const button = document.querySelector('.submitBtn');
 
 button.addEventListener('click', function() {
-    
+    const input = document.querySelector('#favchap').value;
+
     // creates an li element and a delete button
     let listItem = document.createElement('li')
     let itemName = document.createElement('p');
     let deleteBtn = document.createElement('button');
+
+    // Add a class name of chapName to the listItem
+    listItem.setAttribute('class', 'chapName')
 
     // adds the item name & delete button to the list item
     listItem.appendChild(itemName);
