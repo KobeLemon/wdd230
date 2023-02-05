@@ -23,65 +23,125 @@
 <body>
 <!-- HEADER -->
 	<header>
-        <a href="./index.html"><img class="logoImg headerLogo" src="./images/chamber_logo.png" alt="Picture of our Logo"></a>
-        <div class="headerTitle">
-            <h1 class="cityName">Syracuse City</h1>
-            <h1 class="chamberName">Chamber of Commerce</h1>
+        <a class="headerLogoBox" href="./index.html">
+            <img class="headerLogo" src="./images/chamber_logo.png" alt="This is the header image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle.">
+        </a>
+        <div class="headerBox">
+            <div class="headerTitle">
+                <h1 class="cityName">Syracuse City</h1>
+                <h1 class="chamberName">Chamber of Commerce</h1>
+            </div>
+        <!-- NAVIGATION -->
+            <figure class="socialMediaLinks">
+                <a href="https://www.facebook.com/" target="_blank"><img id="facebookLogo"class="socialLogo" src="images/facebook_logo.png" alt="Link to our Facebook"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img id="linkedinLogo"class="socialLogo" src="images/linkedin_logo.png" alt="Link to our LinkedIn"></a>
+            </figure>
+            <div id="currentDate"></div>
+            <nav id="navbar">
+                <button id="hamburgerBtn">
+                    <!-- Hamburger Open Menu Icon -->
+                    <span>&#9776;</span>
+                    <!-- X Close Menu Icon -->
+                    <span>X</span>
+                </button>
+                <ul id="primaryNav">
+                    <li class="currentPage"><a href="#">Home</a></li>
+                    <li class="currentPage"><a href="#">Discover</a></li>
+                    <li class="currentPage"><a href="#">Directory</a></li>
+                    <li class="currentPage"><a href="#">Join</a></li>
+                    <li class="currentPage"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    <!-- NAVIGATION -->
-        <figure class="socialMediaLinks">
-            <a href="https://www.facebook.com/" target="_blank"><img id="facebookLogo"class="socialLogo" src="images/facebook_logo.png" alt="Link to our Facebook"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img id="linkedinLogo"class="socialLogo" src="images/linkedin_logo.png" alt="Link to our LinkedIn"></a>
-        </figure>
-        <div id="currentDate"></div>
-        <nav id="navbar">
-            <button id="hamburgerBtn">
-                <!-- Hamburger Open Menu Icon -->
-                <span>&#9776;</span>
-                <!-- X Close Menu Icon -->
-                <span>X</span>
-            </button>
-            <ul id="primaryNav">
-                <li class="currentPage"><a href="#">Home</a></li>
-                <li class="currentPage"><a href="#">Discover</a></li>
-                <li class="currentPage"><a href="#">Directory</a></li>
-                <li class="currentPage"><a href="#">Join</a></li>
-                <li class="currentPage"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </header>
         
 <!-- CONTENT -->
     <main>
         <section class="content">
-            <h2 class="heroBanner tile mediumColumn1">Hero with site name and call to action</h2>
-            <h2 class="events tile">Events</h2>
-            <h2 class="weather tile">Weather</h2>
-            <h2 class="join tile mediumColumn1">Join</h2>
-            <h2 class="news tile mediumColumn1">News</h2>
-            <div id="spotlightBox" class="tile mediumColumn1">
-                <h2 class="spotlights" id="spotlight1">Spotlight 1</h2>
-                <h2 class="spotlights" id="spotlight2">Spotlight 2</h2>
-            </div>
+            <section class="chamberMeetingBanner tile mediumColumn1"> <!-- JavaScript: Wed-Sun-- const document.querySelector(.chamberMeetingBanner).setAttribute('display', 'none')-->
+                <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+            </section>
+            <section class="heroBanner tile mediumColumn1">
+                <h2 class="overlay">Welcome to Syracuse!</h2>
+                <img class="bannerImg" src="images/syracuse_banner.png" alt="Picture of Cat Tails in Syracuse City. Image Credit of https://syracuseut.gov/">
+                <a href="https://syracuseut.gov/">Image credit of https://syracuseut.gov/</a>
+                <div class="heroDescription">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
+                </div>
+                <a class="joinLink mediumColumn1" href="#">Join the Chamber!</a>
+            </section>
+            <section class="events tile mediumColumn1">
+                <h2 class="eventTitle">Events</h2>
+                <div class="eventsItems">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="weather tile">
+                <h2>Weather</h2>
+                <img class="weatherIcon" src="images/weather-icon.png" alt="Weather Icon">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis error quam assumenda quis nisi molestiae repudiandae cum quos nostrum!</p>
+            </section>
+            <section class="join tile mediumColumn1">
+                <h2>Join</h2>
+                <p class="joinDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cumque doloribus, consectetur cum inventore alias?</p>
+                <a class="joinLink" href="#">Join Us!</a>
+            </section>
+            <section class="news tile mediumColumn1">
+                <h2>News</h2>
+                <div class="newsItems">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                    </ul>
+                </div>
+                <a class="newsLink" href="#">Learn More!</a>
+            </section>
+            <section id="spotlightBox" class="tile mediumColumn1">
+                <h2>Weekly Business <br>Spotlights</h2>
+                <div class="spotlights" id="spotlight1">
+                    <h2 class="spotlightName" id="slName1">John's Lawn Care</h2>
+                    <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
+                    <p class="spotlightTagline" id="slTag1">Affordable Lawn Care!</p>
+                    <hr>
+                    <a href="#" class="spotlightSiteLink" id="slLink1">https://johnslawncare.com</a>
+                    <p class="spotlightPhoneNum" id="slPhone1">(123) 456-7890</p>
+                </div>
+                <div class="spotlights" id="spotlight2">
+                    <h2 class="spotlightName" id="slName2">Quik Mechanik</h2>
+                    <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
+                    <p class="spotlightTagline" id="slTag2">Quality vs Quantity? <br> Here, we do both!</p>
+                    <hr>
+                    <a href="" class="spotlightSiteLink" id="slLink2">https://quikmechanik.com</a>
+                    <p class="spotlightPhoneNum" id="slPhone2">(123) 456-7890</p>
+                </div>
+            </section>
         </section>
     </main>
 <!-- FOOTER -->   
 <footer>
     <figure>
-        <a href="./index.html"><img class="logoImg footerLogo" src="./images/chamber_logo.png" alt="Picture of our Logo"></a>
+        <a href="./index.html"><img class="logoImg footerLogo" src="./images/chamber_logo.png" alt="This is the footer image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle."></a>
     </figure>
     <div class="footerBox1">
         <div class="footerTitle">
-            <h2>Syracuse City</h2>
-            <h2>Chamber of Commerce</h2>
+            <h2>Syracuse City Chamber of Commerce</h2>
         </div>
         <h2 class="chamberAddress">123 Main St.<br>
             Syracuse, UT 84075
         </h2>
     </div>
     <div class="footerBox2">
-        <h2 class="chamberEmail">info@syracusechamber.org</h2>
-        <h2 class="chamberPhone">(123) 456-7890</h2>
+        <h2 class="chamberEmail">✉ info@cusechamber.org</h2>
+        <h2 class="chamberPhone">☏ (123) 456-7890</h2>
         <h2 class="chamberMap">Placeholder Map Link</h2>
     </div>
     <hr>

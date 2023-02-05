@@ -40,6 +40,14 @@ const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.getElementById("currentDate").innerHTML = fulldate;
 
+console.log(dayName)
+if (dayName == "Monday" || dayName == "Tuesday"){
+    document.querySelector(".chamberMeetingBanner").style.display = "block";
+    }
+else {
+    document.querySelector(".chamberMeetingBanner").style.display = "none";
+    }
+
 // find the element with the id of "copyrightYear"
 const copyrightYear = document.querySelector(".copyrightYear");
 

@@ -1,30 +1,48 @@
-/* 64rem is also 1028px when basefont is 16px */
+/* Laptop / Desktop Sizing */
 @media only screen and (min-width: 1028px) {
 
     /* Styling of the Header and its descendants */
-    header {
-        justify-content: flex-start;
-        column-gap: 2.5rem
+
+    header * {
+        margin: auto;
+        
     }
 
-    .headerLogo {order: 0;}
-    .headerTitle{order: 1;}
-    #navbar {order: 2; margin-left: auto;}
-    .socialMediaLinks {order: 3; margin-right: auto;}
-    #currentDate {order: 4;}
+    .headerLogoBox {
+        margin: 0;
+    }
+
+    .headerLogo {
+        width: 15rem;
+        margin-left: 2rem;
+    }
+
+    .headerBox {
+        width: fit-content;
+    }
+
+    .headerTitle{
+        flex-direction: column;
+    }
 
     .cityName {
-        font-size: 3rem;
-        margin-bottom: 0rem;
+        font-size: 2rem;
+        margin: 0rem;
     }
 
     .chamberName {
         font-size: 1.5rem;
+        margin: 0rem;
     }
 
-    #primaryNav {
+    /* DELETE IF NOT NEEDED */
+    /* #primaryNav {
         margin-left: auto;
         margin-right: 2rem;
+    } */
+
+    #navbar {
+        margin-bottom: 1rem;
     }
 
     nav button {
@@ -33,8 +51,8 @@
 
     nav {
         background-color: #1d5e19;
-        margin-right: 0px;
-        margin-left: 0rem;
+        margin-right: 28.5%;
+        margin-top: 1rem;
         border-radius: 0.7rem;
     }
     
@@ -54,7 +72,7 @@
         margin: 0rem;
     }
 
-    nav ul li:hover {
+    nav ul li:hover, .joinLink:hover, .newsLink:hover {
         background-color: #033c92;
         border-radius: 0.7rem;
     }
@@ -72,6 +90,8 @@
     
     #currentDate {
         font-size: 1.5rem;
+        width: fit-content;
+        /* margin: auto; */
     }
     
     /* End of Header Styling */
@@ -80,8 +100,8 @@
     .content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 15rem);
-        gap: 1rem;
+        grid-template-rows: auto repeat(3, 1fr);
+        gap: 0.8rem;
         margin: 1rem;
     }
 
@@ -90,42 +110,53 @@
         height: 100%;
     }
 
+    .chamberMeetingBanner {
+        text-align: center;
+        grid-row: 1/2;
+        /* height: fit-content; */
+    }
+
     .heroBanner {
         grid-column: 2/4;
-        grid-row: 1/3;
+        grid-row: 2/4;
     }    
 
     .events {
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
 
     .weather {
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 
     .join {
         grid-column: 1/2;
-        grid-row: 3/4; 
+        grid-row: 4/5; 
     }
 
     .news {
         grid-column: 2/4;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
 
     #spotlightBox {
         flex-direction: column;
         gap: 1rem;
         grid-column: 4/5;
-        grid-row: 1/-1;
+        grid-row: 2/-1;
         height: 100%;
     }
 
     .spotlights {
         margin: auto;
     }
+
+    .spotlights * {
+        margin-top: 1.5rem;
+    }
+    
     /* End of Main Content Styling */
 
     /* Footer Styling */
@@ -154,6 +185,7 @@
     .footerBox1 {
         text-align: left;
         margin-right: auto;
+        max-width: 20rem;
     }
         
     .footerBox2 {
