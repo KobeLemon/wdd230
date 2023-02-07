@@ -20,11 +20,6 @@ header {
     background-color: #247620;
 }
 
-.headerLogo {
-    width: 10rem;
-    margin-top: 1rem;
-}
-
 .headerBox {
     display: flex;
     background-color: #247620;
@@ -32,6 +27,11 @@ header {
     flex-wrap: wrap;
     column-gap: 1rem;
     justify-content: space-evenly;
+}
+
+.headerLogo {
+    width: 10rem;
+    margin-top: 1rem;
 }
 
 .cityName {
@@ -57,6 +57,7 @@ header {
     max-width: 1.99rem;
 }
 
+/* NavBar Styling */
 nav {
     background-color: #247620;
     height: fit-content;
@@ -133,7 +134,8 @@ nav ul.open {display: block;}
     border-radius: 0.5rem;
     width: 99%;
     text-align: center;
-} 
+}
+/* End of NavBar Styling */
 /* End of Header Styling */
 
 /* Main Content Styling */
@@ -145,6 +147,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     margin-bottom: 1rem;
 }
 
+/* Chamber Meeting Banner Styling */
 .chamberMeetingBanner {
     text-align: center;
 }
@@ -152,17 +155,22 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 .chamberMeetingBanner h2 {
     margin: 0;
 }
+/* End of Chamber Meeting Banner Styling */
 
-.heroBanner {
+/* Hero Banner Styling */
+#heroBanner {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
 }
 
-.heroBanner h2 {
+#heroBanner h2 {
     font-size: 2.5rem;
+    padding-top: 1rem;
 }
 
-.heroBanner p {
+#heroBanner p {
     margin-bottom: 0;
 }
 
@@ -177,7 +185,9 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     top: 1.5rem;
     left: 1.5rem;
 } */
+/* End of Hero Banner Styling */
 
+/* General Tile Styling */
 .tile {
     padding: 0.8rem;
     background-color: whitesmoke;
@@ -187,23 +197,40 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     text-align: center;
     background-color: #cfb69b;
     margin-top: 1rem;
-    /* background-color: whitesmoke; */
 }
 
 .tile h2 {
     margin-top: 0;
 }
+/* End of General Tile Styling */
 
+/* Weather Tile Styling */
 .weatherIcon {
     width: 6rem;
 }
 
+.iconTempBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1.5rem;
+    font-size: 2rem;
+}
+
+.weather p {
+    font-size: 1.5rem;
+}
+
+/* End of Weather Tile Styling */
+
+/* Join Tile Styling */
 .join p {
     text-align: left;
 }
 
 .joinDescription, .heroDescription {
-    padding: 0 0 1rem 0.5rem;
+    padding: 0 0.5rem 1rem 0.5rem;
 }
 
 .joinLink {
@@ -216,21 +243,23 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     border-radius: 0.7rem;
     width: 100%;
 }
+.joinLink h2 {
+    margin: 0;
+    width: fit-content;
+}
+
+/* End of Join Tile Styling */
+
 
 .newsLink {
     color: whitesmoke;
-    /* font-size: 1.5rem; */
     text-decoration: none;
     background-color: #247620;
     padding: 0.7rem;
     border-radius: 0.7rem;
 }
 
-.joinLink h2 {
-    margin: 0;
-    width: fit-content;
-}
-
+/* News & Events Tiles Styling */
 .newsItems, .eventsItems {
     text-align: left;
 }
@@ -240,13 +269,16 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 
 .newsItems ul li, .eventsItems ul li {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 }
+/* End of News & Events Tiles Styling */
 
-#spotlightBox {
+/* Spotlights Tiles Styling */
+.spotlightSubBox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .spotlights {
@@ -265,8 +297,8 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 
 .spotlightLogo {
-    width: 12rem;
-    height: 6rem;
+    width: 200px;
+    height: 100px;
 }
 
 .spotlightTagline {
@@ -276,6 +308,8 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 .spotlightSiteLink, .spotlightPhoneNum {
     font-size: 1rem;
 }
+/* End of Spotlights Tiles Styling */
+
 
 /* End of Main Content Styling */
 

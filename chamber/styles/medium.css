@@ -1,5 +1,5 @@
 /* Tablet Sizing */
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 715px) {
 
     header {
         display: flex;
@@ -33,7 +33,6 @@
 
     .socialMediaLinks {
         flex-direction: row;
-        /* margin-right: auto; */
     }
     
     .socialLogo {
@@ -65,18 +64,33 @@
 
     #spotlightBox {
         display: flex;
-        flex-direction: row;
-        margin-top: auto;
+        flex-direction: column;
+    }
+
+    .spotlightSubBox {
         gap: 1rem;
         height: 100%;
     }
 
     .spotlights {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
         margin: 0rem;
+        gap: 0.8rem;
+    }
+
+    .spotlights * {
+        margin: 0;
+    }
+
+    .spotlights hr {
+        display: none;
     }
 
     .join {
         grid-column: 2/3;
+        height: 100%;
     }
 
     .weather {
@@ -88,7 +102,6 @@
     /* Footer Styling */
     footer {
         flex-direction: row;
-        justify-content: space-around;
         column-gap: 1rem;
         flex-wrap: wrap;
         font-size: 1rem;
@@ -103,14 +116,10 @@
         text-align: left;
         max-width: 15rem;
     }
-        
-    .footerBox2 {
-        margin-left: auto;
-        margin-right: 2rem;
-    }
 
     .footerBox3 {
         font-size: 0.8rem;
+        margin: auto;
     }
     /* End of Footer Styling */
 

@@ -58,12 +58,12 @@
 <!-- CONTENT -->
     <main>
         <section class="content">
-            <section class="chamberMeetingBanner tile mediumColumn1"> <!-- JavaScript: Wed-Sun-- const document.querySelector(.chamberMeetingBanner).setAttribute('display', 'none')-->
+            <section class="chamberMeetingBanner tile mediumColumn1">
                 <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
             </section>
-            <section class="heroBanner tile mediumColumn1">
+            <section class="tile mediumColumn1" id="heroBanner">
                 <h2 class="overlay">Welcome to Syracuse!</h2>
-                <img class="bannerImg" src="images/syracuse_banner.png" alt="Picture of Cat Tails in Syracuse City. Image Credit of https://syracuseut.gov/">
+                <img class="bannerImg" src="images/wdd230-org.jpg" alt="Picture of Cat Tails in Syracuse City. Image Credit of https://syracuseut.gov/">
                 <a href="https://syracuseut.gov/">Image credit of https://syracuseut.gov/</a>
                 <div class="heroDescription">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
@@ -85,8 +85,14 @@
             </section>
             <section class="weather tile">
                 <h2>Weather</h2>
-                <img class="weatherIcon" src="images/weather-icon.png" alt="Weather Icon">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis error quam assumenda quis nisi molestiae repudiandae cum quos nostrum!</p>
+                <div class="iconTempBox">
+                    <img class="weatherIcon" src="images/weather-icon.png" alt="Weather Icon">
+                    <p id="temperature">Filler</p>
+                </div>
+                <p class="cloudType">Filler</p>
+                <hr>
+                <p>Wind Speed: <span class="windspeed">Filler</span></p>
+                <p>Wind Chill: <span class="windchill">Filler</span></p>
             </section>
             <section class="join tile mediumColumn1">
                 <h2>Join</h2>
@@ -107,21 +113,31 @@
             </section>
             <section id="spotlightBox" class="tile mediumColumn1">
                 <h2>Weekly Business <br>Spotlights</h2>
-                <div class="spotlights" id="spotlight1">
-                    <h2 class="spotlightName" id="slName1">John's Lawn Care</h2>
-                    <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
-                    <p class="spotlightTagline" id="slTag1">Affordable Lawn Care!</p>
-                    <hr>
-                    <a href="#" class="spotlightSiteLink" id="slLink1">https://johnslawncare.com</a>
-                    <p class="spotlightPhoneNum" id="slPhone1">(123) 456-7890</p>
-                </div>
-                <div class="spotlights" id="spotlight2">
-                    <h2 class="spotlightName" id="slName2">Quik Mechanik</h2>
-                    <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
-                    <p class="spotlightTagline" id="slTag2">Quality vs Quantity? <br> Here, we do both!</p>
-                    <hr>
-                    <a href="" class="spotlightSiteLink" id="slLink2">https://quikmechanik.com</a>
-                    <p class="spotlightPhoneNum" id="slPhone2">(123) 456-7890</p>
+                <div class="spotlightSubBox">
+                    <div class="spotlights" id="spotlight1">
+                        <h2 class="spotlightName" id="slName1">John's Lawn Care</h2>
+                        <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
+                        <p class="spotlightTagline" id="slTag1">Affordable Lawn Care!</p>
+                        <hr>
+                        <a href="#" class="spotlightSiteLink" id="slLink1">johnslawncare.com</a>
+                        <p class="spotlightPhoneNum" id="slPhone1">(123) 456-7890</p>
+                    </div>
+                    <div class="spotlights" id="spotlight2">
+                        <h2 class="spotlightName" id="slName2">Quik Mechanik</h2>
+                        <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
+                        <p class="spotlightTagline" id="slTag2">Quality vs Quantity? <br>Here, we do both!</p>
+                        <hr>
+                        <a href="" class="spotlightSiteLink" id="slLink2">quikmechanik.com</a>
+                        <p class="spotlightPhoneNum" id="slPhone2">(123) 456-7890</p>
+                    </div>
+                    <div class="spotlights" id="spotlight3">
+                        <h2 class="spotlightName" id="slName3">Save Lots Grocery</h2>
+                        <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
+                        <p class="spotlightTagline" id="slTag3">Discount Groceries!</p>
+                        <hr>
+                        <a href="" class="spotlightSiteLink" id="slLink3">savelotsgrocery.com</a>
+                        <p class="spotlightPhoneNum" id="slPhone3">(123) 456-7890</p>
+                    </div>
                 </div>
             </section>
         </section>
@@ -140,7 +156,7 @@
         </h2>
     </div>
     <div class="footerBox2">
-        <h2 class="chamberEmail">✉ info@cusechamber.org</h2>
+        <h2 class="chamberEmail">✉ info@cusecham.org</h2>
         <h2 class="chamberPhone">☏ (123) 456-7890</h2>
         <h2 class="chamberMap">Placeholder Map Link</h2>
     </div>
