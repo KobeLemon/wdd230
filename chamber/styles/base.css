@@ -30,7 +30,7 @@ header {
 }
 
 .headerLogo {
-    width: 10rem;
+    width: 8rem;
     margin-top: 1rem;
 }
 
@@ -161,7 +161,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 #heroBanner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1rem;
     padding: 0;
 }
 
@@ -176,7 +176,6 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 .bannerImg {
     width: 100%;
-    height: 40%;
     /* position: relative; */
 }
 
@@ -209,22 +208,34 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     width: 6rem;
 }
 
+.weather {
+    display: flex;
+    flex-direction: column;
+}
+
 .iconTempBox {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     margin: auto;
-    gap: 1.5rem;
-    font-size: 2rem;
 }
 
 .weather p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.speedChillBox p {
+    margin: auto 0;
 }
 
 /* End of Weather Tile Styling */
 
 /* Join Tile Styling */
+.join {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .join p {
     text-align: left;
 }
@@ -241,8 +252,10 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     background-color: #247620;
     padding: 0.7rem;
     border-radius: 0.7rem;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
 }
+
 .joinLink h2 {
     margin: 0;
     width: fit-content;
@@ -251,7 +264,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 /* End of Join Tile Styling */
 
 
-.newsLink {
+.newsLink, .eventsLink {
     color: whitesmoke;
     text-decoration: none;
     background-color: #247620;
@@ -261,16 +274,16 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 /* News & Events Tiles Styling */
 .newsItems, .eventsItems {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    gap: 2rem;
 }
 
-.newsItems ul, .eventsItems ul {
+.newsItems, .eventsItems {
     padding-left: 1rem;
 }
 
-.newsItems ul li, .eventsItems ul li {
-    padding-bottom: 1.5rem;
-}
 /* End of News & Events Tiles Styling */
 
 /* Spotlights Tiles Styling */

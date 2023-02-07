@@ -24,7 +24,7 @@
 <!-- HEADER -->
 	<header>
         <a class="headerLogoBox" href="./index.html">
-            <img class="headerLogo" src="./images/chamber_logo.png" alt="This is the header image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle.">
+            <img class="headerLogo" src="./images/chamber_logo176..webp" alt="This is the header image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle.">
         </a>
         <div class="headerBox">
             <div class="headerTitle">
@@ -33,8 +33,8 @@
             </div>
         <!-- NAVIGATION -->
             <figure class="socialMediaLinks">
-                <a href="https://www.facebook.com/" target="_blank"><img id="facebookLogo"class="socialLogo" src="images/facebook_logo.png" alt="Link to our Facebook"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img id="linkedinLogo"class="socialLogo" src="images/linkedin_logo.png" alt="Link to our LinkedIn"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img id="facebookLogo" class="socialLogo" src="images/facebook_logo..webp" alt="Link to our Facebook"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img id="linkedinLogo" class="socialLogo" src="images/linkedin_logo..webp" alt="Link to our LinkedIn"></a>
             </figure>
             <div id="currentDate"></div>
             <nav id="navbar">
@@ -58,13 +58,20 @@
 <!-- CONTENT -->
     <main>
         <section class="content">
+<!-- Chamber Meeting Banner -->
             <section class="chamberMeetingBanner tile mediumColumn1">
                 <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
             </section>
+<!-- Hero Banner -->
             <section class="tile mediumColumn1" id="heroBanner">
                 <h2 class="overlay">Welcome to Syracuse!</h2>
-                <img class="bannerImg" src="images/wdd230-org.jpg" alt="Picture of Cat Tails in Syracuse City. Image Credit of https://syracuseut.gov/">
+                <picture>
+                    <img class="bannerImg" src="images/wdd230-org2000.jpg" alt="Picture of Cat Tails in Syracuse City. Image Credit of https://syracuseut.gov/">
+                    <!-- THE SOURCE SRCSET IS NOT WORKING !!! -->
+                    <source media="(min-width: 715px)" srcset="images/wdd230-org2500.jpgwdd230-org2000.jpg">
+                    <source media="(min-width: 1020px)" srcset="images/wdd230-org3000.jpgwdd230-org2000.jpg">
                 <a href="https://syracuseut.gov/">Image credit of https://syracuseut.gov/</a>
+                </picture>
                 <div class="heroDescription">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
@@ -72,51 +79,53 @@
                 </div>
                 <a class="joinLink mediumColumn1" href="#">Join the Chamber!</a>
             </section>
+<!-- Events -->
             <section class="events tile mediumColumn1">
                 <h2 class="eventTitle">Events</h2>
-                <div class="eventsItems">
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
-                    </ul>
-                </div>
+                <ul class="eventsItems">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                </ul>
+                <a class="eventsLink" href="#">Learn More!</a>
             </section>
+<!-- Weather -->
             <section class="weather tile">
                 <h2>Weather</h2>
                 <div class="iconTempBox">
-                    <img class="weatherIcon" src="images/weather-icon.png" alt="Weather Icon">
-                    <p id="temperature">Filler</p>
+                    <img class="weatherIcon" src="images/weather-icon..webp" alt="Weather Icon">
+                    <p id="temperature"><span id="tempNumber">45</span> &#8457;</p>
                 </div>
-                <p class="cloudType">Filler</p>
+                <p class="cloudType">Partly Cloudy</p>
                 <hr>
-                <p>Wind Speed: <span class="windspeed">Filler</span></p>
-                <p>Wind Chill: <span class="windchill">Filler</span></p>
+                <p>Wind Speed: <span id="windspeed">6</span> mph</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
             </section>
+<!-- Join -->
             <section class="join tile mediumColumn1">
                 <h2>Join</h2>
                 <p class="joinDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cumque doloribus, consectetur cum inventore alias?</p>
                 <a class="joinLink" href="#">Join Us!</a>
             </section>
+<!-- News -->
             <section class="news tile mediumColumn1">
                 <h2>News</h2>
-                <div class="newsItems">
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
-                    </ul>
-                </div>
+                <ul class="newsItems">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                </ul>
                 <a class="newsLink" href="#">Learn More!</a>
             </section>
+<!-- Spotlights -->
             <section id="spotlightBox" class="tile mediumColumn1">
                 <h2>Weekly Business <br>Spotlights</h2>
                 <div class="spotlightSubBox">
                     <div class="spotlights" id="spotlight1">
                         <h2 class="spotlightName" id="slName1">John's Lawn Care</h2>
-                        <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
+                        <img src="./images/placeholder-img..webp" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
                         <p class="spotlightTagline" id="slTag1">Affordable Lawn Care!</p>
                         <hr>
                         <a href="#" class="spotlightSiteLink" id="slLink1">johnslawncare.com</a>
@@ -124,7 +133,7 @@
                     </div>
                     <div class="spotlights" id="spotlight2">
                         <h2 class="spotlightName" id="slName2">Quik Mechanik</h2>
-                        <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder-img..webp" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag2">Quality vs Quantity? <br>Here, we do both!</p>
                         <hr>
                         <a href="" class="spotlightSiteLink" id="slLink2">quikmechanik.com</a>
@@ -132,7 +141,7 @@
                     </div>
                     <div class="spotlights" id="spotlight3">
                         <h2 class="spotlightName" id="slName3">Save Lots Grocery</h2>
-                        <img src="./images/placeholder-img.png" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder-img..webp" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag3">Discount Groceries!</p>
                         <hr>
                         <a href="" class="spotlightSiteLink" id="slLink3">savelotsgrocery.com</a>
@@ -145,7 +154,7 @@
 <!-- FOOTER -->   
 <footer>
     <figure>
-        <a href="./index.html"><img class="logoImg footerLogo" src="./images/chamber_logo.png" alt="This is the footer image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle."></a>
+        <a href="./index.html"><img class="logoImg footerLogo" src="./images/chamber_logo176..webp" alt="This is the footer image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle."></a>
     </figure>
     <div class="footerBox1">
         <div class="footerTitle">
@@ -168,5 +177,6 @@
 </footer>
 
 <script src="scripts/scripts.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
