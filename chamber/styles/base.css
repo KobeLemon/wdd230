@@ -53,8 +53,9 @@ header {
 }
 
 .socialLogo {
-    max-height: 1.99rem;
-    max-width: 1.99rem;
+    /* max-height: 1.99rem;
+    max-width: 1.99rem; */
+    padding: 0.5rem;
 }
 
 /* NavBar Styling */
@@ -148,11 +149,17 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 
 /* Chamber Meeting Banner Styling */
-.chamberMeetingBanner {
+#chamberMeetingBanner {
+    width: 100%;
     text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    height: fit-content;
+    color: #195216;
+    background-color: #cfb69b;
 }
 
-.chamberMeetingBanner h2 {
+#chamberMeetingBanner h2 {
     margin: 0;
 }
 /* End of Chamber Meeting Banner Styling */
@@ -163,11 +170,12 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     flex-direction: column;
     gap: 1rem;
     padding: 0;
+    position: relative;
 }
 
 #heroBanner h2 {
-    font-size: 2.5rem;
-    padding-top: 1rem;
+    font-size: 2.3rem;
+    width: 100%;
 }
 
 #heroBanner p {
@@ -176,14 +184,30 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 .bannerImg {
     width: 100%;
-    /* position: relative; */
+    border-radius: 0.8rem 0.8rem 0 0;
 }
 
-/* .overlay {
+.heroTitle {
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-} */
+    top: 1rem;
+    left: auto;
+    right: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    height: fit-content;
+}
+
+#mediumOverlay, #largeOverlay {
+    display: none;
+}
+
 /* End of Hero Banner Styling */
 
 /* General Tile Styling */
@@ -217,7 +241,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .weather p {
@@ -232,12 +256,12 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 /* Join Tile Styling */
 .join {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: block;
 }
-.join p {
-    text-align: left;
+
+.eventImg {
+    width: 5rem;
+    height: 3rem;
 }
 
 .joinDescription, .heroDescription {
@@ -273,17 +297,27 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 
 /* News & Events Tiles Styling */
-.newsItems, .eventsItems {
+.newsItems {
     display: flex;
     flex-direction: column;
     text-align: left;
+    align-items: center;
     gap: 2rem;
 }
 
-.newsItems, .eventsItems {
+.newsItems {
     padding-left: 1rem;
 }
 
+.eventsItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+.eventsItems li {
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+}
 /* End of News & Events Tiles Styling */
 
 /* Spotlights Tiles Styling */
@@ -323,6 +357,15 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 /* End of Spotlights Tiles Styling */
 
+nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover {
+    background-color: #033c92;
+    border-radius: 0.7rem;
+}
+
+.socialMediaLinks a:hover{
+    background-color: #033c92;
+    border-radius: 0.7rem;
+}
 
 /* End of Main Content Styling */
 

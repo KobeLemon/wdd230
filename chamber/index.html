@@ -12,19 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Noto+Serif:wght@700&family=PT+Sans&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
     <!-- STYLE SHEETS -->
     <link href="styles/normalize.css" rel="stylesheet">
-    <!-- phone-default -->
+    <!-- phone & default styling -->
     <link href="styles/base.css" rel="stylesheet">
-    <!-- tablet -->
+    <!-- tablet styling -->
     <link href="styles/medium.css" rel="stylesheet">
-    <!-- desktop -->
+    <!-- laptop & desktop styling -->
     <link href="styles/large.css" rel="stylesheet">
 
 </head>
 <body>
+<!-- Chamber Meeting Banner -->
+    <section id="chamberMeetingBanner">
+        <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+    </section>
 <!-- HEADER -->
 	<header>
         <a class="headerLogoBox" href="./index.html">
-            <img class="headerLogo" src="./images/chamber_logo176..webp" alt="This is the header image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle.">
+            <img class="headerLogo" src="./images/chamber_logo176.webp" alt="This is the header image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle.">
         </a>
         <div class="headerBox">
             <div class="headerTitle">
@@ -33,8 +37,8 @@
             </div>
         <!-- NAVIGATION -->
             <figure class="socialMediaLinks">
-                <a href="https://www.facebook.com/" target="_blank"><img id="facebookLogo" class="socialLogo" src="images/facebook_logo..webp" alt="Link to our Facebook"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img id="linkedinLogo" class="socialLogo" src="images/linkedin_logo..webp" alt="Link to our LinkedIn"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo" src="images/facebook_logo.webp" alt="Link to our Facebook"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="socialLogo" src="images/linkedin_logo.webp" alt="Link to our LinkedIn"></a>
             </figure>
             <div id="currentDate"></div>
             <nav id="navbar">
@@ -54,24 +58,21 @@
             </nav>
         </div>
     </header>
-        
 <!-- CONTENT -->
     <main>
         <section class="content">
-<!-- Chamber Meeting Banner -->
-            <section class="chamberMeetingBanner tile mediumColumn1">
-                <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
-            </section>
 <!-- Hero Banner -->
             <section class="tile mediumColumn1" id="heroBanner">
-                <h2 class="overlay">Welcome to Syracuse!</h2>
-                <picture>
-                    <img class="bannerImg" src="images/wdd230-org2000.jpg" alt="Picture of Cat Tails in Syracuse City. Image Credit of https://syracuseut.gov/">
-                    <!-- THE SOURCE SRCSET IS NOT WORKING !!! -->
-                    <source media="(min-width: 715px)" srcset="images/wdd230-org2500.jpgwdd230-org2000.jpg">
-                    <source media="(min-width: 1020px)" srcset="images/wdd230-org3000.jpgwdd230-org2000.jpg">
-                <a href="https://syracuseut.gov/">Image credit of https://syracuseut.gov/</a>
+                <picture>    
+                    <source media="(min-width: 1028px)" srcset="images/wdd230-org3000.webp">
+                    <source media="(min-width: 715px)" srcset="images/wdd230-org2500.webp">
+                    <img class="bannerImg" src="images/wdd230-org2000.webp" alt="Picture of Cat Tails in Syracuse City.">
                 </picture>
+                <h2 class="heroTitle" >Welcome to Syracuse!</h2>
+                <p class="overlay" id="smallOverlay">Small</p>
+                <p class="overlay" id="mediumOverlay">Medium</p>
+                <p class="overlay" id="largeOverlay">Large</p>
+                <!-- <a href="https://syracuseut.gov/">Image credit of https://syracuseut.gov/</a> -->
                 <div class="heroDescription">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
@@ -83,10 +84,21 @@
             <section class="events tile mediumColumn1">
                 <h2 class="eventTitle">Events</h2>
                 <ul class="eventsItems">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit!</li>
+                    <li>
+                        <p>Chamber Council Meeting</p>
+                        <p>02/09/2023</p>
+                        <p>Mexi-Thai Yodel - 5pm-6pm</p>
+                    </li>
+                    <li>
+                        <p>Chamber Fundraiser</p>
+                        <p>02/10/2023</p>
+                        <p>The Luau Palace - 10am-2pm</p>
+                    </li>
+                    <li>
+                        <p>Children's Workshop</p>
+                        <p>02/15/2023</p>
+                        <p>Manny's Hardware - 4pm-7pm</p>
+                    </li>
                 </ul>
                 <a class="eventsLink" href="#">Learn More!</a>
             </section>
@@ -94,7 +106,7 @@
             <section class="weather tile">
                 <h2>Weather</h2>
                 <div class="iconTempBox">
-                    <img class="weatherIcon" src="images/weather-icon..webp" alt="Weather Icon">
+                    <img class="weatherIcon" src="images/weather-icon.webp" alt="Weather Icon">
                     <p id="temperature"><span id="tempNumber">45</span> &#8457;</p>
                 </div>
                 <p class="cloudType">Partly Cloudy</p>
@@ -105,17 +117,20 @@
 <!-- Join -->
             <section class="join tile mediumColumn1">
                 <h2>Join</h2>
-                <p class="joinDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cumque doloribus, consectetur cum inventore alias?</p>
+                <div class="joinDescription">
+                    <p>Thank you for visiting the Syracuse City Chamber of Commerce! We are a group of like-minded business owners who want to create a fair and supportive market that allows for a healthy competition.</p>
+                    <p>Syracuse city is a family so we want to preserve our small town roots by protecting and supporting small local businesses. If you own a local business in Syracuse, we would love for you to join us in keeping Syracuse City happy and fair!</p>
+                </div>
                 <a class="joinLink" href="#">Join Us!</a>
             </section>
 <!-- News -->
             <section class="news tile mediumColumn1">
                 <h2>News</h2>
                 <ul class="newsItems">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, atque aliquid! Earum, adipisci? Doloremque, ipsum.</li>
+                    <li>Newly elected Mayor Smith always wears funny hats in public. Are these hats too immature for a political office or do they humanize him and show his willingness to serve?</li>
+                    <li>Police bravely vanquished an evil mouse who broke into a citizen's kitchen to steal his cheese.</li>
+                    <li><strong><em>Mexi-Thai Yodel</em></strong> brings new flavors to town! A new Mexican-Thai fusion restaurant just opened and get this - the servers only talk by yodeling! Go to the corner of 36th and Sparkle St. to find this trendy new spot!</li>
+                    <li>Mayor Smith proposed a new city mandate that will require citizens to wear funny hats at all times in public places. Is this the start of an Orwellian Dystopian future, or just a kooky mayoral proposal? You decide in our poll!</li>
                 </ul>
                 <a class="newsLink" href="#">Learn More!</a>
             </section>
@@ -125,7 +140,7 @@
                 <div class="spotlightSubBox">
                     <div class="spotlights" id="spotlight1">
                         <h2 class="spotlightName" id="slName1">John's Lawn Care</h2>
-                        <img src="./images/placeholder-img..webp" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
+                        <img src="./images/placeholder-img.webp" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
                         <p class="spotlightTagline" id="slTag1">Affordable Lawn Care!</p>
                         <hr>
                         <a href="#" class="spotlightSiteLink" id="slLink1">johnslawncare.com</a>
@@ -133,7 +148,7 @@
                     </div>
                     <div class="spotlights" id="spotlight2">
                         <h2 class="spotlightName" id="slName2">Quik Mechanik</h2>
-                        <img src="./images/placeholder-img..webp" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder-img.webp" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag2">Quality vs Quantity? <br>Here, we do both!</p>
                         <hr>
                         <a href="" class="spotlightSiteLink" id="slLink2">quikmechanik.com</a>
@@ -141,7 +156,7 @@
                     </div>
                     <div class="spotlights" id="spotlight3">
                         <h2 class="spotlightName" id="slName3">Save Lots Grocery</h2>
-                        <img src="./images/placeholder-img..webp" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder-img.webp" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag3">Discount Groceries!</p>
                         <hr>
                         <a href="" class="spotlightSiteLink" id="slLink3">savelotsgrocery.com</a>
@@ -154,7 +169,7 @@
 <!-- FOOTER -->   
 <footer>
     <figure>
-        <a href="./index.html"><img class="logoImg footerLogo" src="./images/chamber_logo176..webp" alt="This is the footer image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle."></a>
+        <a href="./index.html"><img class="logoImg footerLogo" src="./images/chamber_logo176.webp" alt="This is the footer image of the Chamber's Logo. It shows line art of three people standing in front of a building that is circled by a target, all inside another circle."></a>
     </figure>
     <div class="footerBox1">
         <div class="footerTitle">
@@ -167,16 +182,17 @@
     <div class="footerBox2">
         <h2 class="chamberEmail">✉ info@cusecham.org</h2>
         <h2 class="chamberPhone">☏ (123) 456-7890</h2>
-        <h2 class="chamberMap">Placeholder Map Link</h2>
+        <h2 class="chamberMap">Directions: </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40301.835298959966!2d-112.10153873076369!3d41.085059621512436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fd0925f39bdd%3A0x66de35e949280ee1!2sSyracuse%2C%20UT!5e0!3m2!1sen!2sus!4v1675884770087!5m2!1sen!2sus" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <hr>
     <div class="footerBox3">
-        <h2>&copy; <span class="copyrightYear"></span> | Kobe Lemon | WDD 230 |</h2>
-        <h2>Last Updated: <span class="lastModified"></span><!-- This <h2> is where the JavaScript will place the "last modified" date/time --></h2>
+        <h2>&copy; <span id="copyrightYear"></span> | Kobe Lemon | WDD 230 |</h2>
+        <h2>Last Updated: <span id="lastModified"></span><!-- This <h2> is where the JavaScript will place the "last modified" date/time --></h2>
     </div>
 </footer>
 
-<script src="scripts/scripts.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/scripts.js"></script>
 </body>
 </html>

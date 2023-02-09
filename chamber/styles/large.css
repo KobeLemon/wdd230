@@ -3,10 +3,6 @@
 
     /* Styling of the Header and its descendants */
 
-    body {
-        max-width: 1100px;
-    }
-
     header * {
         margin: auto;
         
@@ -70,21 +66,10 @@
         margin: 0rem;
     }
 
-    nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover {
-        background-color: #033c92;
-        border-radius: 0.7rem;
-    }
-    
-    .socialMediaLinks a:hover{
-        background-color: #033c92;
-        border-radius: 0.7rem;
-        padding: 0.3rem;
-    }
-
-    .socialLogo {
+    /* .socialLogo {
         max-height: 3rem;
         max-width: 3rem;
-    }
+    } */
     
     #currentDate {
         font-size: 1.5rem;
@@ -97,7 +82,8 @@
     .content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto repeat(3, 1fr);
+        grid-template-rows: auto;
+        /* grid-template-rows: repeat(3, 1fr); */
         gap: 0.8rem;
         margin: 1rem;
     }
@@ -107,28 +93,31 @@
         height: 100%;
     }
 
-    .chamberMeetingBanner {
-        text-align: center;
-        grid-row: 1/2;
-    }
-
     #heroBanner {
         grid-column: 2/4;
-        grid-row: 2/4;
+        grid-row: 1/span 2;
     }
 
     #heroBanner h2 {
         margin: 0;
     }
 
+    #largeOverlay {
+        display: block;
+    }
+
+    #smallOverlay, #mediumOverlay {
+        display: none;
+    }
+
     .events {
-        grid-column: 1/2;
-        grid-row: 2/3;
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
     }
 
     .weather {
-        grid-column: 1/2;
-        grid-row: 3/4;
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
     }
 
     #temperature {
@@ -139,25 +128,25 @@
 
     .weather p {
         width: fit-content;
-        margin: auto;
+        margin: 0 auto;
         padding: 0.5rem;
     }
 
     .join {
-        grid-column: 1/2;
-        grid-row: 4/5; 
+        grid-column: 1/span 1;
+        grid-row: 3/span 1; 
     }
 
     .news {
-        grid-column: 2/4;
-        grid-row: 4/5;
+        grid-column: 2/span 2;
+        grid-row: 3/span 1;
     }
 
     #spotlightBox {
         flex-direction: column;
         gap: 1rem;
-        grid-column: 4/5;
-        grid-row: 2/-1;
+        grid-column: 4/span 1;
+        grid-row: 1/span 3;
         height: 100%;
     }
 
