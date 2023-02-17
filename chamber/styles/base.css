@@ -2,7 +2,7 @@
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; 
-    background-color: whitesmoke;
+    background-color: rgb(255,255,240);  
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -53,8 +53,6 @@ header {
 }
 
 .socialLogo {
-    /* max-height: 1.99rem;
-    max-width: 1.99rem; */
     padding: 0.5rem;
 }
 
