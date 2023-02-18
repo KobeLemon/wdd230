@@ -28,7 +28,7 @@
 <!-- HEADER -->
 	<header>
         <a class="headerLogoBox" href="./index.html">
-            <img class="headerLogo" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle.">
+            <img class="headerLogo hoverZoom" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle.">
         </a>
         <div class="headerBox">
             <div class="headerTitle">
@@ -37,8 +37,8 @@
             </div>
         <!-- NAVIGATION -->
             <figure class="socialMediaLinks">
-                <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo" src="images/facebook_logo.webp" alt="Link to our Facebook"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img class="socialLogo" src="images/linkedin_logo.webp" alt="Link to our LinkedIn"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo hoverZoom" src="images/facebook_logo.webp" alt="Link to our Facebook"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="socialLogo hoverZoom" src="images/linkedin_logo.webp" alt="Link to our LinkedIn"></a>
             </figure>
             <div id="currentDate"></div>
             <nav id="navbar">
@@ -49,11 +49,11 @@
                     <span>X</span>
                 </button>
                 <ul id="primaryNav">
-                    <li class="currentPage"><a href="#">Home</a></li>
-                    <li class="currentPage"><a href="#">Discover</a></li>
-                    <li class="currentPage"><a href="#">Directory</a></li>
-                    <li class="currentPage"><a href="#">Join</a></li>
-                    <li class="currentPage"><a href="#">Contact</a></li>
+                    <li class="currentPage hoverZoom"><a href="index.html">Home</a></li>
+                    <li class="currentPage hoverZoom"><a href="discover.html">Discover</a></li>
+                    <li class="currentPage hoverZoom"><a href="#">Directory</a></li>
+                    <li class="currentPage hoverZoom"><a href="#">Join</a></li>
+                    <li class="currentPage hoverZoom"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,22 +63,24 @@
         <div class="content">
 <!-- Hero Banner -->
             <section class="tile mediumColumn1" id="heroBanner">
-                <picture>    
+                <picture> 
+                   <!--
                     <source media="(min-width: 1028px)" srcset="images/wdd230-org3000.webp">
                     <source media="(min-width: 715px)" srcset="images/wdd230-org2500.webp">
-                    <img class="bannerImg" src="images/wdd230-org2000.webp" alt="Picture of Cat Tails in Syracuse City.">
+                    -->
+                    <img class="bannerImg" src="images/syracuse_banner.webp" alt="Picture of Cat Tails in Syracuse City.">
                 </picture>
                 <h2 class="heroTitle" >Welcome to Syracuse!</h2>
-                <p class="overlay" id="smallOverlay">Small</p>
+                <!-- <p class="overlay" id="smallOverlay">Small</p>
                 <p class="overlay" id="mediumOverlay">Medium</p>
-                <p class="overlay" id="largeOverlay">Large</p>
+                <p class="overlay" id="largeOverlay">Large</p> -->
                 <!-- <a href="https://syracuseut.gov/">Image credit of https://syracuseut.gov/</a> -->
                 <div class="heroDescription">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam ipsam cupiditate, ad molestias ducimus earum labore quis dolore praesentium repellendus temporibus perferendis totam sed neque exercitationem aut dolor facere ipsum iste dolorum voluptates id porro ab? Iusto, est explicabo.</p>
                 </div>
-                <a class="joinLink mediumColumn1" href="#">Join the Chamber!</a>
+                <a class="joinLink hoverZoom mediumColumn1" href="#">Join the Chamber!</a>
             </section>
 <!-- Events -->
             <section class="events tile mediumColumn1">
@@ -100,14 +102,14 @@
                         <p>Manny's Hardware - 4pm-7pm</p>
                     </li>
                 </ul>
-                <a class="eventsLink" href="#">Learn More!</a>
+                <a class="eventsLink hoverZoom" href="#">Learn More!</a>
             </section>
 <!-- Weather -->
             <section class="weather tile">
                 <h2>Weather</h2>
                 <div class="iconTempBox">
                     <img class="weatherIcon" src="images/weather-icon.webp" alt="Weather Icon">
-                    <p id="temperature"><span id="tempNumber">45</span> &#8457;</p>
+                    <p id="temperature"><span id="tempNumber">45</span>&#8457;</p>
                 </div>
                 <p class="cloudType">Partly Cloudy</p>
                 <hr>
@@ -121,7 +123,7 @@
                     <p>Thank you for visiting the Syracuse City Chamber of Commerce! We are a group of like-minded business owners who want to create a fair and supportive market that allows for a healthy competition.</p>
                     <p>Syracuse City is a family so we want to preserve our small town roots by protecting and supporting small local businesses. If you own a local business in Syracuse, we would love for you to join us in keeping Syracuse City happy and fair!</p>
                 </div>
-                <a class="joinLink" href="#">Join Us!</a>
+                <a class="joinLink hoverZoom" href="#">Join Us!</a>
             </section>
 <!-- News -->
             <section class="news tile mediumColumn1">
@@ -132,7 +134,7 @@
                     <li><strong><em>Mexi-Thai Yodel</em></strong> brings new flavors to town! A new Mexican-Thai fusion restaurant just opened and get this - the servers only talk by yodeling! Go to the corner of 36th and Sparkle St. to find this trendy new spot!</li>
                     <li>Mayor Smith proposed a new city mandate that will require citizens to wear funny hats at all times in public places. Is this the start of an Orwellian Dystopian future, or just a kooky mayoral proposal? You decide in our poll!</li>
                 </ul>
-                <a class="newsLink" href="#">Learn More!</a>
+                <a class="newsLink hoverZoom" href="#">Learn More!</a>
             </section>
 <!-- Spotlights -->
             <section id="spotlightBox" class="tile mediumColumn1">
@@ -140,26 +142,26 @@
                 <div class="spotlightSubBox">
                     <div class="spotlights" id="spotlight1">
                         <h2 class="spotlightName" id="slName1">John's Lawn Care</h2>
-                        <img src="./images/placeholder-img.webp" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
+                        <img src="./images/placeholder.webp" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
                         <p class="spotlightTagline" id="slTag1">Affordable Lawn Care!</p>
                         <hr>
-                        <a href="#" class="spotlightSiteLink" id="slLink1">johnslawncare.com</a>
+                        <a href="#" class="spotlightSiteLink hoverZoom" id="slLink1">johnslawncare.com</a>
                         <p class="spotlightPhoneNum" id="slPhone1">(123) 456-7890</p>
                     </div>
                     <div class="spotlights" id="spotlight2">
                         <h2 class="spotlightName" id="slName2">Quik Mechanik</h2>
-                        <img src="./images/placeholder-img.webp" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder.webp" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag2">Quality vs Quantity? <br>Here, we do both!</p>
                         <hr>
-                        <a href="" class="spotlightSiteLink" id="slLink2">quikmechanik.com</a>
+                        <a href="" class="spotlightSiteLink hoverZoom" id="slLink2">quikmechanik.com</a>
                         <p class="spotlightPhoneNum" id="slPhone2">(123) 456-7890</p>
                     </div>
                     <div class="spotlights" id="spotlight3">
                         <h2 class="spotlightName" id="slName3">Save Lots Grocery</h2>
-                        <img src="./images/placeholder-img.webp" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder.webp" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag3">Discount Groceries!</p>
                         <hr>
-                        <a href="" class="spotlightSiteLink" id="slLink3">savelotsgrocery.com</a>
+                        <a href="" class="spotlightSiteLink hoverZoom" id="slLink3">savelotsgrocery.com</a>
                         <p class="spotlightPhoneNum" id="slPhone3">(123) 456-7890</p>
                     </div>
                 </div>
@@ -169,7 +171,7 @@
 <!-- FOOTER -->   
 <footer>
     <figure>
-        <a href="./index.html"><img class="logoImg footerLogo" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle."></a>
+        <a href="./index.html"><img class="hoverZoom footerLogo" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle."></a>
     </figure>
     <div class="footerBox1">
         <div class="footerTitle">

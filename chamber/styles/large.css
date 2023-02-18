@@ -123,7 +123,7 @@
     #temperature {
         margin: 0;
         padding: 0rem;
-        font-size: 2.5rem;
+        font-size: 2.45rem;
     }
 
     .weather p {
@@ -164,6 +164,15 @@
     }
     
     /* End of Main Content Styling */
+
+    /* Discover Page Styling */
+    .hoverZoom:hover, .cityInfoSource a:hover {
+        scale: 1.1;
+    }
+    
+    .hoverZoom, .cityInfoSource a {
+        transition: 0.5s ease;
+    }
 
     /* Footer Styling */
     footer {

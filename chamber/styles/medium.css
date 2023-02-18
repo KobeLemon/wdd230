@@ -33,11 +33,6 @@
     .socialMediaLinks {
         flex-direction: row;
     }
-    
-    /* .socialLogo {
-        max-height: 2rem;
-        max-width: 2rem;
-    } */
 
     #currentDate {
         font-size: 1.5rem;
@@ -105,6 +100,20 @@
     }
 
     /* End of Main Content Styling */
+
+    /* Discover Page Styling */
+    .imgBox {
+        max-width: 600px;
+    }
+
+    .images {
+        width: 600px;
+        height: 400px;
+    }
+
+    .cityInfoSource, .visitBox {
+        width: 600px;
+    }
 
     /* Footer Styling */
     footer {

@@ -8,8 +8,9 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body {
-    width: 100%;
+main {
+    width: 90%;
+    margin: auto;
 }
 
 /* Styling of the Header and its descendants */
@@ -137,7 +138,7 @@ nav ul.open {display: block;}
 /* End of NavBar Styling */
 /* End of Header Styling */
 
-/* Main Content Styling */
+/* Main Page Content Styling */
 
 p, a, li {font-family: 'Noto Sans', 'PT Sans', sans-serif; color: #033c92;}
 h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
@@ -173,7 +174,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 
 #heroBanner h2 {
-    font-size: 2.3rem;
+    font-size: 2.55rem;
     width: 100%;
 }
 
@@ -183,14 +184,17 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 .bannerImg {
     width: 100%;
+    height: 20rem;
     border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .heroTitle {
     position: absolute;
-    top: 1rem;
+    top: 10rem;
     left: auto;
     right: auto;
+    color: #1d7b18;
+    text-shadow: 0 0 20px white;
 }
 
 .overlay {
@@ -365,8 +369,88 @@ nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover {
     background-color: #033c92;
     border-radius: 0.7rem;
 }
+/* End of Main Page Content Styling */
 
-/* End of Main Content Styling */
+/* Discover Page Content Styling */
+#discoverPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#discoverTitle {
+    font-size: 3rem;
+    color: #195216;
+    text-align: center;
+}
+
+.imgBox {
+    width: 100%;
+}
+
+.imgBox h3 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2rem;
+    color: #195216;
+}
+
+.images {
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+img[data-src] {
+    filter: blur(0.5rem);
+}
+
+img {
+    filter: blur(0rem);
+    transition: filter 0.5s;
+    border-radius: 0.8rem;
+}
+
+.imgDescription {
+    padding: 0rem 0.5rem;
+    color: #033c92;
+}
+
+.cityInfoSource {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: #247620;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.visitBox {
+    text-align: center;
+    background-color: #247620;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    color: whitesmoke;
+}
+
+.cityInfoSource p, .cityInfoSource a {
+    color: whitesmoke;
+    margin-bottom: 0px;
+    padding: 0.5rem;
+}
+
+.cityInfoSource a:hover {
+    background-color: #033c92;
+    border-radius: 0.7rem;
+}
+
+/* End of Discover Page Content Styling */
 
 /* Footer Styling */
 footer {
