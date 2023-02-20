@@ -60,11 +60,14 @@ ul {
     list-style-type: none;
 }
 
+a {
+    padding: 5px;    
+}
+
 a:hover { 
     background-color: rgb(54,129,84);
     box-shadow: 0 0 5px rgba(50,50,50,0.8);
     border-radius: 5px;
-    padding: 5px;
     color: white;
 }
 

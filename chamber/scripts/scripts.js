@@ -63,5 +63,5 @@ if (weekDayNumber == 1 || weekDayNumber == 2){
 else {
 	// console.log(`Mon/Tues If Statement False | Current Weekday Number: ${weekDayNumber}`)
     document.getElementById("chamberMeetingBanner").style.display = "none";
-	console.log(`Mon/Tues If Statement False | Set Meeting Banner display to none`)
+	// console.log(`Mon/Tues If Statement False | Set Meeting Banner display to none`)
 }
