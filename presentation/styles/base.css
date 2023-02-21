@@ -1,0 +1,279 @@
+/* Start of General Styling */
+html {
+    background-color: rgb(255,255,240);  
+}
+
+body {
+    width: 60%;
+    margin: auto;
+}
+
+main {
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+header {
+    text-align: center;
+    background-color: #247620;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 2px;
+}
+
+.sectionTitle {
+    padding: 0.5rem;
+    font-size: 2rem;
+    width: fit-content;
+    margin-top: 5rem;
+}
+
+.sectionTitle:hover {
+    background-color: #247620;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.exampleBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;  
+}
+
+.example {
+    height: 75px;
+    width: 150px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    background-color: #247620;
+    position: relative;
+    border-radius: 5px;
+}
+/* End of General Styling */
+
+/* Start of Keyframes */
+/* Basic Keyframe */
+
+#basicAnimation {
+    animation-name: basicAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+@keyframes basicAnimation {
+    0% {background-color: #247620;}
+    100% {background-color: black;}
+}
+
+/* Timing Keyframe */
+.timing {
+    animation-name: timing;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+#timingEase {
+    animation-timing-function: ease;
+}
+
+#timingLinear {
+    animation-timing-function: linear;
+}
+
+#timingEaseIn {
+    animation-timing-function: ease-in;
+}
+
+#timingEaseOut {
+    animation-timing-function: ease-out;
+}
+
+#timingEaseInOut {
+    animation-timing-function: ease-in-out;
+}
+
+#timingCubicBezier {
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes timing {
+    0% {left: 0%;}
+    100% {left: 77%;}
+}
+
+/* Repeat Keyframe */
+.repeat {
+    animation-name: repeat;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+#repeatThree {
+    animation-iteration-count: 3;
+}
+
+#repeatInfinite {
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes repeat{
+    0% {left: 0%;}
+    100% {left: 77%;}
+}
+
+/* Delay Keyframe */
+.delay {
+    animation-name: delay;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+#positiveDelay {
+    animation-delay: 2s;
+}
+
+#negativeDelay {
+    animation-delay: -0.5s;
+}
+
+@keyframes delay {
+    0% {left: 0%;}
+    100% {left: 77%;}
+}
+
+/* Direction Keyframe */
+.direction {
+    animation-name: direction;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+}
+
+#directionNormal {
+    animation-direction: normal;
+}
+
+#directionReverse {
+    animation-direction: reverse;
+}
+
+/* Alternate & Alternate-Reverse must have at least 2 iterations for it to play both directions */
+#directionAlternate {
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+#directionAlternateReverse {
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes direction {
+    0% {left: 0%;}
+    100% {left: 77%;}
+}
+
+/* Fill Mode Keyframe */
+.fillMode {
+    animation-name: fillMode;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+}
+
+#fillNone {
+    animation-fill-mode: none;
+}
+
+#fillForwards {
+    animation-fill-mode: forwards;
+}
+
+#fillBackwards {
+    animation-fill-mode: backwards;
+}
+
+#fillBoth {
+    animation-fill-mode: both;
+}
+
+@keyframes fillMode {
+    0% {left: 0%; background-color: aqua;}
+    25% {left: 20%; background-color: blueviolet;}
+    50% {left: 40%; background-color: brown;}
+    75% {left: 60%; background-color: burlywood;}
+    100% {left: 80%; background-color: crimson;}
+}
+
+/* Shorthand Keyframe */
+/* General Styling */
+#shortLongBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#shortLongBox .example {
+    background-color: black;
+    margin: 5rem auto;
+}
+
+.shorthand {
+    /* Name Duration Timing Delay Repeat Direction Fill-Mode */
+    animation: shortlong 5s linear 2s 2 alternate backwards
+}
+
+.longhand {
+    animation-name: shortlong;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+@keyframes shortlong {
+    0% {background-color: #247620; transform: rotate(0deg); top: 0px;}
+    20% {background-color: orange; scale: 1.2; transform: rotate(144deg); top: 100px}
+    40% {background-color: yellow; scale: 1.4; transform: rotate(288deg); top: 0px;}
+    60% {
+        background-color: green;
+        scale: 1.6;
+        transform: rotate(432deg);
+        top: 100px;
+    }
+    80% {
+        background-color: blue;
+        scale: 1.8;
+        transform: rotate(576deg);
+        top: 0px;
+    }
+    100% {
+        background-color: purple;
+        scale: 2;
+        transform: rotate(720deg);
+        top: 100px;
+    }
+}
+/* End of Keyframes */
