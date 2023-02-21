@@ -35,6 +35,13 @@ h2 {
     margin-bottom: 2px;
 }
 
+iframe, video {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: 275px
+}
+
 .sectionTitle {
     padding: 0.5rem;
     font-size: 2rem;
