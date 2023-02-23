@@ -9,7 +9,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 main {
-    width: 90%;
+    width: 99%;
     margin: auto;
 }
 
@@ -39,10 +39,6 @@ header {
     font-size: 2rem;
     margin-bottom: 0;
     text-align: center;
-}
-
-.chamberName {
-    font-size: 0.95rem;
 }
 
 .socialMediaLinks {
@@ -150,17 +146,12 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 /* Chamber Meeting Banner Styling */
 #chamberMeetingBanner {
-    display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 0.5rem;
     padding: 0.8rem;
     height: fit-content;
     color: #195216;
     background-color: #cfb69b;
-}
-
-#chamberMeetingBanner h2 {
     margin: 0;
 }
 /* End of Chamber Meeting Banner Styling */
