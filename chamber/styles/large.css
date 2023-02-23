@@ -167,7 +167,7 @@
 
     /* Discover Page Styling */
     .hoverZoom:hover, .cityInfoSource a:hover {
-        scale: 1.1;
+        transform: scale(1.1);
     }
     
     .hoverZoom, .cityInfoSource a {

@@ -35,11 +35,9 @@ h2 {
     margin-bottom: 2px;
 }
 
-iframe, video {
-    width: 600px;
+video {
+    width: 100%;
     height: 300px;
-    position: relative;
-    left: 275px
 }
 
 .sectionTitle {
@@ -241,7 +239,7 @@ iframe, video {
 }
 
 #shortLongBox .example {
-    background-color: black;
+    background-color: #247620;
     margin: 5rem auto;
 }
 
@@ -261,26 +259,35 @@ iframe, video {
 }
 
 @keyframes shortlong {
-    0% {background-color: #247620; transform: rotate(0deg); top: 0px;}
-    20% {background-color: orange; scale: 1.2; transform: rotate(144deg); top: 100px}
-    40% {background-color: yellow; scale: 1.4; transform: rotate(288deg); top: 0px;}
-    60% {
-        background-color: green;
-        scale: 1.6;
-        transform: rotate(432deg);
+    0% {
+        top: 0px;
+        background-color: red;
+        transform: scale(1) rotate(0deg);
+    }
+    20% {
         top: 100px;
+        background-color: orange;
+        transform: scale(1.2) rotate(144deg); 
+    }
+    40% {
+        top: 0px;
+        background-color: yellow;
+        transform: scale(1.4) rotate(288deg);
+    }
+    60% {
+        top: 100px;
+        background-color: green;
+        transform: scale(1.6) rotate(432deg);
     }
     80% {
-        background-color: blue;
-        scale: 1.8;
-        transform: rotate(576deg);
         top: 0px;
+        background-color: blue;
+        transform: scale(1.8) rotate(576deg);
     }
     100% {
-        background-color: purple;
-        scale: 2;
-        transform: rotate(720deg);
         top: 100px;
+        background-color: purple;
+        transform: scale(2) rotate(720deg);
     }
 }
 /* End of Keyframes */

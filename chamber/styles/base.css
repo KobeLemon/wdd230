@@ -35,9 +35,10 @@ header {
     margin-top: 1rem;
 }
 
-.cityName {
-    font-size: 1.5rem;
+.chamberTitle {
+    font-size: 2rem;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .chamberName {
