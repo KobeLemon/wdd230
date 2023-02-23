@@ -472,6 +472,11 @@ footer {
     margin-top: 0px;
 }
 
+#map {
+    width: 20rem;
+    height: 100px;
+}
+
 hr {
     color: #5C5043;
     width: 90%;
