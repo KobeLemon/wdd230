@@ -37,8 +37,10 @@ header {
 
 .chamberTitle {
     font-size: 2rem;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    margin: 0.5rem;
     text-align: center;
+    /* max-width: 400px; */
 }
 
 .socialMediaLinks {
@@ -138,7 +140,7 @@ nav ul.open {display: block;}
 /* Main Page Content Styling */
 
 p, a, li {font-family: 'Noto Sans', 'PT Sans', sans-serif; color: #033c92;}
-h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
+h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 .content {
     margin-bottom: 1rem;
@@ -146,6 +148,7 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 /* Chamber Meeting Banner Styling */
 #chamberMeetingBanner {
+    display: none;
     width: 100%;
     text-align: center;
     padding: 0.8rem;
@@ -352,14 +355,14 @@ h1, h2, .cityName, .chamberName {font-family: 'Noto Serif', 'PT Serif', serif;}
 }
 /* End of Spotlights Tiles Styling */
 
-nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover {
+nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover, #submit:hover {
     background-color: #033c92;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
 }
 
 .socialMediaLinks a:hover{
     background-color: #033c92;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
 }
 /* End of Main Page Content Styling */
 
@@ -443,6 +446,102 @@ img {
 }
 
 /* End of Discover Page Content Styling */
+
+/* Join Page Styling */
+
+.joinTitle, label, h3, #thankYouPage h2 {
+    color: #195216;
+}
+
+.joinForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.joinForm h3, .membershipBenefits h3 {
+    font-size: 2rem;
+}
+
+.joinTitle {
+    width: fit-content;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.applicantInfo *, .businessInfo * {
+    display: block;
+    padding: 0.5rem;
+}
+
+.applicantInfo label {
+    padding: 0.5rem;
+}
+
+input, textarea {
+    border: 1px solid #5C5043;
+    border-radius: 0.5rem;
+    max-width: 300px;
+}
+
+.applicantInfo label input {
+    margin-top: 0.5rem;
+}
+
+.membership * {
+    width: fit-content;
+}
+
+.membRadio {
+    display: block;
+    padding: 0.5rem;
+    color: #033c92;
+}
+
+#submit {
+    padding: 0.5rem;
+    width: fit-content;
+    margin-top: 2rem;
+    background-color: #247620;
+    color: whitesmoke;
+    font-size: 1.75rem;
+}
+
+.membershipBenefits {
+    margin: 0 4rem;
+}
+
+.membershipBenefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* End of Join Page Styling */
+
+/* Thank You Page Styling */
+#thankYouPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 3rem auto 10rem auto;
+    text-align: center;
+}
+
+#thankYouPage h2 {
+    font-size: 3rem;
+}
+
+#thankYouPage h3 {
+    color: #033c92;
+    font-size: 2rem;
+}
 
 /* Footer Styling */
 footer {

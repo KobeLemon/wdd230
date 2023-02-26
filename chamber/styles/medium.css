@@ -115,6 +115,58 @@
         width: 600px;
     }
 
+    /* Join Page Styling */
+    #joinPage {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .joinTitle {
+        grid-column: 1/-1;
+        grid-row: 1/span 1;
+        margin: 2rem auto;
+    }
+
+    .membershipBenefits {
+        grid-column: 2 /span 1;
+        grid-row: 2 /span 1;
+    }
+
+    .membershipBenefits ul li {
+        font-size: 1.5rem;
+    }
+
+    .joinForm {
+        /* grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        column-gap: 0rem; */
+        grid-row: 2/span 1;
+    }
+
+    .membership {
+        margin-top: 0.5rem;
+    }
+
+    .businessInfo {
+        margin-top: 2rem;
+    }
+
+    .businessInfo label input, .businessInfo label textarea {
+        margin-top: 0.75rem;
+    }
+
+    .membershipBenefits {
+        margin: 0 0.5rem 0 0;
+        padding-left: 1rem;
+        border-left: 1px solid black;
+    }
+    
+    #submit {
+        grid-column: 2/span 2;
+        grid-row: 2/span 1;
+    }
+
     /* Footer Styling */
     footer {
         flex-direction: row;
