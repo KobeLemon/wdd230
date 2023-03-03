@@ -58,6 +58,13 @@ body {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    border-bottom: 1px solid black;
+    padding-left: 40px;
+    /* width: ``; */
 }
 
 a {
