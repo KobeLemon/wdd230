@@ -21,20 +21,6 @@
         width: fit-content;
     }
 
-    .headerTitle{
-        flex-direction: column;
-    }
-
-    .cityName {
-        font-size: 2rem;
-        margin: 0rem;
-    }
-
-    .chamberName {
-        font-size: 1.5rem;
-        margin: 0rem;
-    }
-
     #navbar {
         margin-bottom: 1rem;
     }
@@ -45,7 +31,7 @@
 
     nav {
         background-color: #1d5e19;
-        margin-right: 28.5%;
+        margin-right: 39%;
         margin-top: 1rem;
         border-radius: 0.7rem;
     }
@@ -171,13 +157,16 @@
     }
     
     .hoverZoom, .cityInfoSource a {
-        transition: 0.5s ease;
+        transition: 0.25s ease;
     }
+    /* End of Discover Page Styling */
 
     /* Join Page Styling */
-    .joinForm {
-        align-items: center;
+    .inputWidth {
+        width: 25rem
     }
+    /* End of Join Page Styling */
+
 
     /* Footer Styling */
     footer {

@@ -32,7 +32,7 @@
             <img class="headerLogo hoverZoom" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle.">
         </a>
         <div class="headerBox">
-                <h1 class="chamberTitle">Syracuse City <br>Chamber of Commerce</h1>
+            <h1 class="chamberTitle">Syracuse City <br>Chamber of Commerce</h1>
     <!-- Social Media Links -->
             <figure class="socialMediaLinks">
                 <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo hoverZoom" src="images/facebook_logo.webp" alt="Link to our Facebook"></a>
@@ -50,9 +50,8 @@
                 <ul id="primaryNav">
                     <li class="currentPage hoverZoom"><a href="index.html">Home</a></li>
                     <li class="currentPage hoverZoom"><a href="discover.html">Discover</a></li>
-                    <li class="currentPage hoverZoom"><a href="#">Directory</a></li>
+                    <li class="currentPage hoverZoom"><a href="directory.html">Directory</a></li>
                     <li class="currentPage hoverZoom"><a href="join.html">Join</a></li>
-                    <li class="currentPage hoverZoom"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -67,23 +66,23 @@
                 <h3>Applicant Information</h3>
                 <!-- First Name -->
                 <label for="fname">First Name*
-                    <input type="text" id="fname" name="fname" required>
+                    <input type="text" class="inputWidth" id="fname" name="fname" required>
                 </label>
                 <!-- Last Name -->
                 <label for="lname">Last Name*
-                    <input type="text" id="lname" name="lname" required>
+                    <input type="text" class="inputWidth" id="lname" name="lname" required>
                 </label>
                 <!-- Email -->
                 <label for="email">Email*
-                    <input type="email" id="email" name="email" placeholder="youremail@domain.com" required>
+                    <input type="email" class="inputWidth" id="email" name="email" placeholder="youremail@domain.com" required>
                 </label>
                 <!-- Phone -->
                 <label for="phone">Phone Number*
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" class="inputWidth" id="phone" name="phone" required>
                 </label>
                 <!-- Job Title -->
                 <label for="jobTitle">Job Title
-                    <input type="text" id="jobTitle" name="jobTitle" pattern="[a-zA-Z\s\-]{7,}">
+                    <input type="text" class="inputWidth" id="jobTitle" name="jobTitle" pattern="[a-zA-Z\s\-]{7,}">
                 </label>
             </div>
     <!-- Business Info & Membership Options -->
@@ -92,11 +91,11 @@
                 <div class="businessInfo">
                     <!-- Business Name -->
                     <label for="businessName">Business Name*
-                        <input type="text" id="businessName" name="businessName" required>
+                        <input type="text" class="inputWidth" id="businessName" name="businessName" required>
                     </label >
                     <!-- Business Description -->
-                    <label for="businessDescription">Business Description
-                        <textarea name="businessDescription" id="businessDescription" cols="30" rows="10"></textarea>
+                    <label for="businessDescription">Short Business Description <span id="desExample">ex. Automotive Repair Shop<br>ex. Vietnamese Fine Dining</span>
+                        <textarea name="businessDescription" class="inputWidth" id="businessDescription" cols="30" rows="10"></textarea>
                     </label>
                 </div>
                 <h3>Membership Level</h3>
@@ -122,7 +121,7 @@
                 </label>
             </div>
     <!-- Submit -->
-            <input type="submit" id="submit" value="Submit my Application">
+            <input type="submit" id="submit" class="hoverZoom" value="Submit my Application">
             <input type="hidden" name="hiddenDate" id="hiddenDate" value="">
         </form>
         <div class="membershipBenefits">
@@ -160,7 +159,6 @@
     <div class="footerBox2">
         <h2 class="chamberEmail hoverZoom">✉ info@cusecham.org</h2>
         <h2 class="chamberPhone hoverZoom">☏ (123) 456-7890</h2>
-        <h2 class="chamberMap">Directions: </h2>
         <a href="https://www.google.com/maps/place/Syracuse,+UT/@41.0948008,-112.1278491,11.82z/data=!4m5!3m4!1s0x8752fd0925f39bdd:0x66de35e949280ee1!8m2!3d41.0893878!4d-112.0646657?hl=en" target="_blank">
             <img src="images/map_picture.webp" alt="Link to Map Directions" class="hoverZoom" id="map">
         </a>

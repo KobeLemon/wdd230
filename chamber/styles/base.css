@@ -13,7 +13,7 @@ main {
     margin: auto;
 }
 
-/* Styling of the Header and its descendants */
+/* Base Styling of the Header and its descendants */
 header {
     display: flex;
     flex-direction: column;
@@ -26,8 +26,7 @@ header {
     background-color: #247620;
     color: whitesmoke;
     flex-wrap: wrap;
-    column-gap: 1rem;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .headerLogo {
@@ -37,10 +36,8 @@ header {
 
 .chamberTitle {
     font-size: 2rem;
-    /* margin-bottom: 0; */
     margin: 0.5rem;
     text-align: center;
-    /* max-width: 400px; */
 }
 
 .socialMediaLinks {
@@ -56,7 +53,7 @@ header {
     padding: 0.5rem;
 }
 
-/* NavBar Styling */
+/* NavBar Base Styling */
 nav {
     background-color: #247620;
     height: fit-content;
@@ -134,11 +131,10 @@ nav ul.open {display: block;}
     width: 99%;
     text-align: center;
 }
-/* End of NavBar Styling */
-/* End of Header Styling */
+/* End of NavBar Base Styling */
+/* End of Header Base Styling */
 
-/* Main Page Content Styling */
-
+/* Main Page Content Base Styling */
 p, a, li {font-family: 'Noto Sans', 'PT Sans', sans-serif; color: #033c92;}
 h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 
@@ -146,7 +142,7 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
     margin-bottom: 1rem;
 }
 
-/* Chamber Meeting Banner Styling */
+/* Chamber Meeting Banner Base Styling */
 #chamberMeetingBanner {
     display: none;
     width: 100%;
@@ -157,9 +153,9 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
     background-color: #cfb69b;
     margin: 0;
 }
-/* End of Chamber Meeting Banner Styling */
+/* End of Chamber Meeting Banner Base Styling */
 
-/* Hero Banner Styling */
+/* Hero Banner Base Styling */
 #heroBanner {
     display: flex;
     flex-direction: column;
@@ -205,10 +201,9 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 #mediumOverlay, #largeOverlay {
     display: none;
 }
+/* End of Hero Banner Base Styling */
 
-/* End of Hero Banner Styling */
-
-/* General Tile Styling */
+/* General Tile Base Styling */
 .tile {
     padding: 0.8rem;
     background-color: whitesmoke;
@@ -223,9 +218,9 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 .tile h2 {
     margin-top: 0;
 }
-/* End of General Tile Styling */
+/* End of General Tile Base Styling */
 
-/* Weather Tile Styling */
+/* Weather Tile Base Styling */
 .weatherIcon {
     width: 6rem;
 }
@@ -249,10 +244,9 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 .speedChillBox p {
     margin: auto 0;
 }
+/* End of Weather Tile Base Styling */
 
-/* End of Weather Tile Styling */
-
-/* Join Tile Styling */
+/* Join Tile Base Styling */
 .join {
     display: block;
 }
@@ -282,10 +276,9 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
     margin: 0;
     width: fit-content;
 }
+/* End of Join Tile Base Styling */
 
-/* End of Join Tile Styling */
-
-
+/* News & Events Tiles Base Styling */
 .newsLink, .eventsLink {
     color: whitesmoke;
     text-decoration: none;
@@ -294,7 +287,6 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
     border-radius: 0.7rem;
 }
 
-/* News & Events Tiles Styling */
 .newsItems {
     display: flex;
     flex-direction: column;
@@ -316,9 +308,9 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
     border-bottom: 1px solid black;
     margin-bottom: 0.5rem;
 }
-/* End of News & Events Tiles Styling */
+/* End of News & Events Tiles Base Styling */
 
-/* Spotlights Tiles Styling */
+/* Spotlights Tiles Base Styling */
 .spotlightSubBox {
     display: flex;
     flex-direction: column;
@@ -353,8 +345,9 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 .spotlightSiteLink, .spotlightPhoneNum {
     font-size: 1rem;
 }
-/* End of Spotlights Tiles Styling */
+/* End of Spotlights Tiles Base Styling */
 
+/* Main Page Links Styling */
 nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover, #submit:hover {
     background-color: #033c92;
     border-radius: 0.5rem;
@@ -364,9 +357,10 @@ nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover, #submit:ho
     background-color: #033c92;
     border-radius: 0.5rem;
 }
-/* End of Main Page Content Styling */
+/* End of Main Page Links Styling */
+/* End of Main Page Content Base Styling */
 
-/* Discover Page Content Styling */
+/* Discover Page Content Base Styling */
 #discoverPage {
     display: flex;
     flex-direction: column;
@@ -375,7 +369,7 @@ nav ul li:hover, .joinLink:hover, .newsLink:hover, .eventsLink:hover, #submit:ho
     margin-bottom: 2rem;
 }
 
-#discoverTitle {
+#discoverTitle, .directoryTitle {
     font-size: 3rem;
     color: #195216;
     text-align: center;
@@ -444,11 +438,74 @@ img {
     background-color: #033c92;
     border-radius: 0.7rem;
 }
+/* End of Discover Page Content Base Styling */
 
-/* End of Discover Page Content Styling */
+/* Directory Page Base Styling */
+#gridLayout {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    row-gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+}
 
-/* Join Page Styling */
+#btnGridList {
+    height: 2rem;
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5px;
+    background-color: #cfb69b;
+    color: #195216;
+    font-weight: bold;
+}
 
+#gridLayout .directoryCard {
+    background-color: #cfb69b;
+    color: #195216;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+#gridLayout .directoryCard {
+    width: 320px;
+}
+
+.directoryCard h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.directoryCard img {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    margin: 10px 5px;
+}
+
+#listLayout {
+    margin-bottom: 1rem;
+}
+
+#listLayout section:nth-of-type(odd) {
+    background-color: #cfb69b;
+}
+
+#listLayout .directoryCard .listNone {
+    display: none;
+}
+
+#listLayout .directoryCard {
+    color: #195216;
+    padding: 1rem;
+}
+/* End of Directory Page Base Styling */
+
+/* Join Page Base Styling */
 .joinTitle, label, h3, #thankYouPage h2 {
     color: #195216;
 }
@@ -486,11 +543,20 @@ label {
 input, textarea {
     border: 1px solid #5C5043;
     border-radius: 0.5rem;
-    max-width: 300px;
 }
 
 .applicantInfo label input {
     margin-top: 0.5rem;
+}
+
+#businessDescription {
+    height: 3rem;
+}
+
+#desExample {
+    margin: 0px;
+    font-size: 1rem;
+    color: #033c92;
 }
 
 .membership * {
@@ -522,9 +588,9 @@ input, textarea {
     gap: 3rem;
 }
 
-/* End of Join Page Styling */
+/* End of Join Page Base Styling */
 
-/* Thank You Page Styling */
+/* Thank You Page Base Styling */
 #thankYouPage {
     display: flex;
     flex-direction: column;
@@ -542,8 +608,9 @@ input, textarea {
     color: #033c92;
     font-size: 2rem;
 }
+/* End of Thank You Page Base Styling */
 
-/* Footer Styling */
+/* Footer Base Styling */
 footer {
     display: flex;
     flex-direction: column;
@@ -563,7 +630,7 @@ footer {
 }
 
 #map {
-    width: 20rem;
+    width: 17rem;
     height: 100px;
 }
 
@@ -572,4 +639,4 @@ hr {
     width: 90%;
     font-size: large;
 }
-/* End of Footer Styling */
+/* End of Footer Base Styling */
