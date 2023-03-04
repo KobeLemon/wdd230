@@ -1,12 +1,11 @@
 let numVisits = Number(window.localStorage.getItem("visits-ls")); // Using the Number() function ensures that if the storage item does not exist, it will be converted into a zero (0) which helps on the if block condition.
 
 // determine if this is the first visit or display the number of visits.
-if (numVisits !==  0) {
-    document.getElementById("visits").textContent = numVisits;
-} else {
-    // notify the user it is their first visit to the site
-    document.getElementById("label").textContent = ``
+if (numVisits ==  0) {
+    document.getElementById("label").textContent = ``;
     document.getElementById("visits").textContent = `This is your first visit!`;
+} else {
+    document.getElementById("visits").textContent = numVisits;
 }
 
 // increment the number of visits
@@ -15,7 +14,7 @@ numVisits++;
 localStorage.setItem("visits-ls", numVisits);
 
 const imagesToLoad = document.querySelectorAll("img[data-src]");
-console.log(imagesToLoad)
+// console.log(imagesToLoad);
 
 const loadImages = (image) => {
     image.setAttribute("src", image.getAttribute("data-src"));

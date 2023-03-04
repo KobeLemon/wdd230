@@ -29,7 +29,7 @@ const displayProphets = (prophets) => {
         birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
         death.textContent = `Date of Death: ${prophet.death}`;
         prophetYears.textContent = `Prophet Years: ${prophet.length}`;
-        prophetOrder.textContent = `Prophet # ${prophet.order}`
+        prophetOrder.textContent = `Prophet # ${prophet.order}`;
         birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
         children.textContent = `Children: ${prophet.numofchildren}`;
 

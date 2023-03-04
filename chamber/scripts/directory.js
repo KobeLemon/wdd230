@@ -13,15 +13,15 @@ const displayCompanies = (companies) => {
     companies.forEach((company) => {
         // this creates the container of each individual card
         let card = document.createElement('section');
-        card.classList.add('directoryCard')
+        card.classList.add('directoryCard');
         
         // These are the elements for the info about each company
         let logo = document.createElement('img');
-        logo.classList.add('listNone')
+        logo.classList.add('listNone');
         let chamberRep = document.createElement('img');
         chamberRep.classList.add('listNone')
         let divider = document.createElement('hr');
-        divider.classList.add('listNone')
+        divider.classList.add('listNone');
         let companyName = document.createElement('h2');
         let description = document.createElement('p');
         let phone = document.createElement('p');
@@ -31,13 +31,13 @@ const displayCompanies = (companies) => {
         let membership = document.createElement('p');
 
         // Build the company card
-        companyName.textContent = company.businessName
-        description.textContent = company.businessDescription
-        phone.textContent = company.phone
-        email.textContent = company.email
-        address.textContent = company.address
-        website.textContent = company.website
-        membership.textContent = company.membership
+        companyName.textContent = company.businessName;
+        description.textContent = company.businessDescription;
+        phone.textContent = company.phone;
+        email.textContent = company.email;
+        address.textContent = company.address;
+        website.textContent = company.website;
+        membership.textContent = company.membership;
 
         // Build the logo
         logo.setAttribute('src', company.logo);
@@ -54,7 +54,7 @@ const displayCompanies = (companies) => {
         chamberRep.setAttribute('height', '100');
 
         // link the website url of each company
-        website.setAttribute('href', company.website)
+        website.setAttribute('href', company.website);
         // website.innerHTML(company.website)
 
         // Append the section(card) with the created elements

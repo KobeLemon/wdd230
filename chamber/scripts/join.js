@@ -22,17 +22,17 @@ const months = [
 	"November",
 	"December"
 ];
-// console.log(`Months Names: ${months}`)
+// console.log(`Months Names: ${months}`);
 const d = new Date();
-// console.log(`Current Unformatted Date: ${d}`)
-const weekDayNumber = d.getDay()
-console.log(`Current Weekday Number: ${weekDayNumber}`)
+// console.log(`Current Unformatted Date: ${d}`);
+const weekDayNumber = d.getDay();
+// console.log(`Current Weekday Number: ${weekDayNumber}`);
 const weekDayName = weekDaynames[weekDayNumber];
-// console.log(`Current Weekday Name: ${weekDayName}`)
+// console.log(`Current Weekday Name: ${weekDayName}`);
 const monthName = months[d.getMonth()];
-// console.log(`Current Month Name: ${monthName}`)
+// console.log(`Current Month Name: ${monthName}`);
 const year = d.getFullYear();
-// console.log(`Current Year Name: ${year}`)
+// console.log(`Current Year Name: ${year}`);
 const fulldate = `${weekDayName}, ${d.getDate()} ${monthName} ${year}`;
 document.getElementById("hiddenDate").value = fulldate;
-// console.log(`Current Hidden Date: ${hiddenDate.value}`)
+// console.log(`Current Hidden Date: ${hiddenDate.value}`);
