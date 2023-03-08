@@ -11,8 +11,8 @@
             "businessName": "Hug-Hes Cafe",
             "businessDescription": "American Fine Dining",
             "membership": "Silver Membership",
-            "logo": "images/memberLogo/hughescafelogo.png",
-            "chamberRep": "images/memberRep/stockperson1.jpg"
+            "logo": "images/memberLogo/hughescafelogo.webp",
+            "chamberRep": "images/memberRep/stockperson1.webp"
         },
         {
             "fname": "Jane",
@@ -25,8 +25,8 @@
             "businessName": "Pearson Auto",
             "businessDescription": "Automotive Repair",
             "membership": "Gold Membership",
-            "logo": "images/memberLogo/pearsonlogo.png",
-            "chamberRep": "images/memberRep/stockperson2.jpg"
+            "logo": "images/memberLogo/pearsonlogo.webp",
+            "chamberRep": "images/memberRep/stockperson2.webp"
         },
         {
             "fname": "Henry",
@@ -39,8 +39,8 @@
             "businessName": "The Rush Funplex",
             "businessDescription": "Amusement Park/Arcade",
             "membership": "Gold Membership",
-            "logo": "images/memberLogo/rushfunplex.png",
-            "chamberRep": "images/memberRep/stockperson3.jpg"
+            "logo": "images/memberLogo/rushfunplex.webp",
+            "chamberRep": "images/memberRep/stockperson3.webp"
         },
         {
             "fname": "Jessica",
@@ -53,8 +53,8 @@
             "businessName": "Austen's Bakery",
             "businessDescription": "Pastry Bakery",
             "membership": "Bronze Membership",
-            "logo": "images/memberLogo/stocklogo1.png",
-            "chamberRep": "images/memberRep/stockperson4.jpg"
+            "logo": "images/memberLogo/stocklogo1.webp",
+            "chamberRep": "images/memberRep/stockperson4.webp"
         },
         {
             "fname": "Louise",
@@ -67,8 +67,8 @@
             "businessName": "Choose A Dream Foundation",
             "businessDescription": "Non-Profit Charity",
             "membership": "Non-Profit Membership",
-            "logo": "images/memberLogo/stocklogo2.jpg",
-            "chamberRep": "images/memberRep/stockperson5.jpg"
+            "logo": "images/memberLogo/stocklogo2.webp",
+            "chamberRep": "images/memberRep/stockperson5.webp"
         },
         {
             "fname": "Julian",
@@ -81,8 +81,8 @@
             "businessName": "Little Teddy Day Care",
             "businessDescription": "Child Care",
             "membership": "Bronze Membership",
-            "logo": "images/memberLogo/stocklogo3.jpg",
-            "chamberRep": "images/memberRep/stockperson6.jpg"
+            "logo": "images/memberLogo/stocklogo3.webp",
+            "chamberRep": "images/memberRep/stockperson6.webp"
         },
         {
             "fname": "Noah",
@@ -95,8 +95,8 @@
             "businessName": "Syracuse Chiropractic",
             "businessDescription": "Chiropractor",
             "membership": "Silver Membership",
-            "logo": "images/memberLogo/stocklogo4.png",
-            "chamberRep": "images/memberRep/stockperson7.jpg"
+            "logo": "images/memberLogo/stocklogo4.webp",
+            "chamberRep": "images/memberRep/stockperson7.webp"
         },
         {
             "fname": "Ashley",
@@ -109,8 +109,8 @@
             "businessName": "Magic Housekeeping",
             "businessDescription": "Cleaning Services",
             "membership": "Silver Membership",
-            "logo": "images/memberLogo/stocklogo5.jpg",
-            "chamberRep": "images/memberRep/stockperson8.jpg"
+            "logo": "images/memberLogo/stocklogo5.webp",
+            "chamberRep": "images/memberRep/stockperson8.webp"
         },
         {
             "fname": "John",
@@ -123,8 +123,8 @@
             "businessName": "Larsen & Carson Attorneys",
             "businessDescription": "Injury Attorney",
             "membership": "Gold Membership",
-            "logo": "images/memberLogo/stocklogo6.png",
-            "chamberRep": "images/memberRep/stockperson9.jpg"
+            "logo": "images/memberLogo/stocklogo6.webp",
+            "chamberRep": "images/memberRep/stockperson9.webp"
         }
     ]
 }
