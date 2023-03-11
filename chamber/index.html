@@ -99,14 +99,15 @@
 <!-- Weather -->
             <section class="weather tile">
                 <h2>Weather</h2>
-                <div class="iconTempBox">
-                    <img class="weatherIcon" src="images/weather-icon.webp" alt="Weather Icon">
-                    <p id="temperature"><span id="tempNumber">45</span>&#8457;</p>
-                </div>
-                <p class="cloudType">Partly Cloudy</p>
+                <figure class="iconTempBox">
+                    <img src="images/placeholder75x75.png" alt="FILLER ALT" id="weatherIcon">
+                    <p id="currentTemp"></p>
+                    <figcaption></figcaption>
+                </figure>
                 <hr>
-                <p>Wind Speed: <span id="windspeed">6</span> mph</p>
-                <p>Wind Chill: <span id="windchill"></span></p>
+                <p id="windspeed"></p>
+                <p id="windchill"></p>
+                <p id="humidity"></p>
             </section>
 <!-- Join -->
             <section class="join tile mediumColumn1">
@@ -134,7 +135,7 @@
                 <div class="spotlightSubBox">
                     <div class="spotlights" id="spotlight1">
                         <h2 class="spotlightName" id="slName1">John's Lawn Care</h2>
-                        <img src="./images/placeholder.webp" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
+                        <img src="./images/placeholder75x75.png" class="spotlightLogo" id="slLogo1" alt="John's Lawn Care Logo'">
                         <p class="spotlightTagline" id="slTag1">Affordable Lawn Care!</p>
                         <hr>
                         <a href="#" class="spotlightSiteLink hoverZoom" id="slLink1">johnslawncare.com</a>
@@ -142,7 +143,7 @@
                     </div>
                     <div class="spotlights" id="spotlight2">
                         <h2 class="spotlightName" id="slName2">Quik Mechanik</h2>
-                        <img src="./images/placeholder.webp" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder75x75.png" class="spotlightLogo" id="slLogo2" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag2">Quality vs Quantity? <br>Here, we do both!</p>
                         <hr>
                         <a href="" class="spotlightSiteLink hoverZoom" id="slLink2">quikmechanik.com</a>
@@ -150,7 +151,7 @@
                     </div>
                     <div class="spotlights" id="spotlight3">
                         <h2 class="spotlightName" id="slName3">Save Lots Grocery</h2>
-                        <img src="./images/placeholder.webp" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
+                        <img src="./images/placeholder75x75.png" class="spotlightLogo" id="slLogo3" alt="Quik Mechanik Logo">
                         <p class="spotlightTagline" id="slTag3">Discount Groceries!</p>
                         <hr>
                         <a href="" class="spotlightSiteLink hoverZoom" id="slLink3">savelotsgrocery.com</a>
@@ -162,6 +163,7 @@
     </main>
 <!-- FOOTER -->   
 <footer>
+    <p class="weatherCredit">Weather data from <a href="https://openweathermap.org/">https://openweathermap.org/</a></p>
     <figure>
         <a href="./index.html"><img class="hoverZoom footerLogo" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle."></a>
     </figure>

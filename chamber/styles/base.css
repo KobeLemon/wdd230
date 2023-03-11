@@ -221,8 +221,13 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 /* End of General Tile Base Styling */
 
 /* Weather Tile Base Styling */
-.weatherIcon {
-    width: 6rem;
+#weatherIcon {
+    width: 75px;
+    height: 75px;
+}
+
+.iconTempBox figure {
+    margin: auto 10px;
 }
 
 .weather {
@@ -233,17 +238,25 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 .iconTempBox {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    /* column-gap: 1rem; */
     margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.weather p {
+.weather p, .iconTempBox figcaption {
     font-size: 1.25rem;
+}
+
+#currentTemp {
+    margin: auto 0px;
+    font-size: 1.5rem;
 }
 
 .speedChillBox p {
     margin: auto 0;
 }
+
 /* End of Weather Tile Base Styling */
 
 /* Join Tile Base Styling */
@@ -619,6 +632,17 @@ footer {
     padding-top: 0.8em;
     color: whitesmoke;
     text-align: center;
+}
+
+.weatherCredit {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.weatherCredit a {
+    color: whitesmoke;
 }
 
 .footerLogo {
