@@ -181,10 +181,10 @@ h1, h2 {font-family: 'Noto Serif', 'PT Serif', serif;}
 
 .heroTitle {
     position: absolute;
-    top: 10rem;
+    top: 7rem;
     left: auto;
     right: auto;
-    color: #1d7b18;
+    color: #0eef02;
     text-shadow: 0 0 20px white;
 }
 

@@ -51,11 +51,6 @@
     #primaryNav {
         margin: 0rem;
     }
-
-    /* .socialLogo {
-        max-height: 3rem;
-        max-width: 3rem;
-    } */
     
     #currentDate {
         font-size: 1.5rem;
@@ -69,7 +64,6 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        /* grid-template-rows: repeat(3, 1fr); */
         gap: 0.8rem;
         margin: 1rem;
     }
