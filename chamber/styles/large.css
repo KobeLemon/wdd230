@@ -68,11 +68,6 @@
         margin: 1rem;
     }
 
-    .tile {
-        margin-top: 0rem;
-        height: 100%;
-    }
-
     #heroBanner {
         grid-column: 2/4;
         grid-row: 1/span 2;

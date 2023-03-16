@@ -48,6 +48,7 @@
 
     .tile {
         margin-top: 0rem;
+        height: 100%;
     }
     
     #mediumOverlay {
@@ -89,7 +90,6 @@
 
     .join {
         grid-column: 2/3;
-        height: 100%;
     }
 
     .weather {
