@@ -1,7 +1,7 @@
-/* Laptop / Desktop Sizing */
+/* Laptop / Desktop Large Sizing */
 @media only screen and (min-width: 1028px) {
 
-    /* Styling of the Header and its descendants */
+    /* Large Styling of the Header and its descendants */
 
     header * {
         margin: auto;
@@ -57,9 +57,9 @@
         width: fit-content;
     }
     
-    /* End of Header Styling */
+    /* End of Header Large Styling */
 
-    /* Main Content Styling */
+    /* Main Content Large Styling */
     .content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -138,9 +138,9 @@
         margin-top: 1.5rem;
     }
     
-    /* End of Main Content Styling */
+    /* End of Main Content Large Styling */
 
-    /* Discover Page Styling */
+    /* Discover Page Large Styling */
     .hoverZoom:hover, .cityInfoSource a:hover {
         transform: scale(1.1);
     }
@@ -148,16 +148,40 @@
     .hoverZoom, .cityInfoSource a {
         transition: 0.25s ease;
     }
-    /* End of Discover Page Styling */
+    /* End of Discover Page Large Styling */
 
-    /* Join Page Styling */
+    /* Join Page Large Styling */
     .inputWidth {
         width: 25rem
     }
-    /* End of Join Page Styling */
+    /* End of Join Page Large Styling */
 
+    /* Contact Page Large Styling */
 
-    /* Footer Styling */
+    #contactPage {
+        justify-content: space-evenly;
+    }
+
+    .indicateRequired {
+        margin-left: 3rem;
+    }
+
+    .contactBox1, .contactBox2 {
+        gap: 4.5rem;
+        justify-content: center;
+    }
+
+    #contactPage hr {
+        left: auto;
+    }
+
+    #message {
+        margin: 1rem auto;
+    }
+
+    /* End of Contact Page Large Styling */
+
+    /* Footer Large Styling */
     footer {
         flex-direction: row;
         justify-content: space-between;
@@ -197,6 +221,6 @@
         margin: auto;
         gap: 0.5rem;
     }
-    /* End of Footer Styling */
+    /* End of Footer Large Styling */
 
 }

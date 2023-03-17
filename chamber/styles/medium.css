@@ -1,4 +1,4 @@
-/* Tablet Sizing */
+/* Tablet Medium Sizing */
 @media only screen and (min-width: 715px) {
     header {
         display: flex;
@@ -151,10 +151,6 @@
         grid-row: 2 /span 1;
     }
 
-    .membershipBenefits ul li {
-        font-size: 1.5rem;
-    }
-
     .joinForm {
         grid-row: 2/span 1;
     }
@@ -183,6 +179,57 @@
     }
     /* End of Join Page Medium Styling */
 
+    /* Contact Page Medium Styling */
+
+    #contactPage {
+        flex-direction: row;
+    }
+
+    .contactBox1, .contactBox2 {
+        justify-content: start;
+        column-gap: 3rem;
+    }
+
+    .contactForm {
+        display: grid;
+        margin-left: 1rem;
+        width: fit-content;
+        width: 50%;
+    }
+    
+    #contactPage hr {
+        position: absolute;
+        transform: rotate(90deg);
+        width: 400px;
+        left: 240px;
+        top: 525px;
+    }
+    
+    .indicateRequired {
+        grid-column: 1/-1;
+        font-size: 0.75rem;
+    }
+    
+    #message {
+        margin: 1rem 0px;
+        max-width: 91%;
+    }
+    
+    #contactPage form #submit {
+        grid-column: 1/2;
+        grid-row: 6/span 1;
+    }
+
+    #contactPage hr {
+        left: 220px;
+    }
+
+    .chamberInfo {
+        width: 50%;
+    }
+
+    /* End of Contact Page Medium Styling */
+
     /* Footer Medium Styling */
     footer {
         flex-direction: row;
@@ -206,5 +253,4 @@
         margin: auto;
     }
     /* End of Footer Medium Styling */
-
 }

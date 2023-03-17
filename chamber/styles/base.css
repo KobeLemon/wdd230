@@ -543,8 +543,17 @@ img {
     text-align: center;
 }
 
-label {
+.applicantInfo label, .businessInfo label {
     font-size: 1.5rem;
+}
+
+.applicantTitle {
+    margin-bottom: 0px;
+}
+
+#requiredSubtitle {
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .applicantInfo *, .businessInfo * {
@@ -591,7 +600,7 @@ input, textarea {
     margin-top: 2rem;
     background-color: #247620;
     color: whitesmoke;
-    font-size: 1.75rem;
+    font-size: 1.3rem;
 }
 
 .membershipBenefits {
@@ -601,10 +610,111 @@ input, textarea {
 .membershipBenefits ul {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
+}
+
+.membershipBenefits ul li {
+    font-size: 1.2rem;
 }
 
 /* End of Join Page Base Styling */
+
+/* Contact Page Styling */
+
+#contactPage {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    column-gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.contactPageTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #195216;
+}
+
+.contactBox1, .contactBox2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 4.5rem;
+    justify-content: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormTitle {
+    margin-bottom: 0px;
+}
+
+.indicateRequired {
+    margin-left: 1rem;
+}
+
+#contactPage form #submit {
+    align-self: center;
+    margin: 1rem auto;
+}
+
+.contactBox1 input, .contactBox2 input {
+    max-width: 10rem;
+    padding: 0.25rem;
+}
+
+.contactBox1 label, .contactBox2 label, #message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#message {
+    margin: 1rem;
+}
+
+#contactPage h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.chamberInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.chamberInfo h4 {
+    font-size: 1.5rem;
+    color: #195216;
+    margin: 0px;
+}
+
+.chamberEmail {
+    margin-bottom: 0px;
+}
+
+.chamberAddress {
+    margin: 0.5rem auto;
+}
+
+.chamberInfo * {
+    width: fit-content;
+}
+
+.chamberInfoTitle, .contactFormTitle {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+/* End of Contact Page Styling */
 
 /* Thank You Page Base Styling */
 #thankYouPage {
@@ -618,6 +728,7 @@ input, textarea {
 
 #thankYouPage h2 {
     font-size: 3rem;
+    margin: 0px;
 }
 
 #thankYouPage h3 {
@@ -635,6 +746,8 @@ footer {
     padding-top: 0.8em;
     color: whitesmoke;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 .weatherCredit {
@@ -656,7 +769,7 @@ footer {
     margin-top: 0px;
 }
 
-#map {
+.map {
     width: 17rem;
     height: 100px;
 }

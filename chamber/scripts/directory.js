@@ -1,4 +1,4 @@
-const url = "data.json";
+const url = "json/data.json";
 
 async function getCompanyData() {
     const response = await fetch(url);

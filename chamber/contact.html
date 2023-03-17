@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kobe Lemon">
-    <meta name="description" content="Chamber of Commerce Main Page | Kobe Lemon | WDD 230 BYU-Idaho">
-    <title>Chamber of Commerce Home | Kobe Lemon | WDD 230</title>
+    <meta name="description" content="Chamber of Commerce Discover Page | Kobe Lemon | WDD 230 BYU-Idaho">
+    <title>Chamber of Commerce Discover | Kobe Lemon | WDD 230</title>
     <link rel="icon" href="../favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Noto+Serif:wght@700&family=PT+Sans&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
-    <!-- STYLE SHEETS -->
+    
+    <!-- CSS STYLE SHEETS -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- phone & default styling -->
     <link href="styles/base.css" rel="stylesheet">
@@ -19,10 +20,12 @@
     <link href="styles/medium.css" rel="stylesheet">
     <!-- laptop & desktop styling -->
     <link href="styles/large.css" rel="stylesheet">
+
 </head>
 <body>
 <!-- Chamber Meeting Banner -->
     <h2 id="chamberMeetingBanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+
 <!-- HEADER -->
 	<header>
         <a class="headerLogoBox" href="./index.html">
@@ -30,12 +33,13 @@
         </a>
         <div class="headerBox">
             <h1 class="chamberTitle">Syracuse City <br>Chamber of Commerce</h1>
-        <!-- NAVIGATION -->
+    <!-- Social Media Links -->
             <figure class="socialMediaLinks">
                 <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo hoverZoom" src="images/facebook_logo.webp" alt="Link to our Facebook"></a>
                 <a href="https://www.linkedin.com/" target="_blank"><img class="socialLogo hoverZoom" src="images/linkedin_logo.webp" alt="Link to our LinkedIn"></a>
             </figure>
             <div id="currentDate"></div>
+    <!-- Navigation -->
             <nav id="navbar">
                 <button id="hamburgerBtn">
                     <!-- Hamburger Open Menu Icon -->
@@ -53,26 +57,73 @@
             </nav>
         </div>
     </header>
-<!-- CONTENT -->
+
+<!-- MAIN CONTENT -->
+    
 
     <main>
-        <h2 class="directoryTitle">Membership Directory</h2>
-        <button class="hoverZoom" id="btnGridList" onclick="changeLayout()">Switch to List 📄</button>
-        <div class="cards" id="gridLayout"></div>
+        <h2 class="contactPageTitle">Contact Us!</h2>
+    <!-- Join Form -->
+        <div id="contactPage">
+            <form method="get" action="thankyou.html" class="contactForm">
+                <h3 class="contactFormTitle">Send us a message!</h3>
+                <p class="indicateRequired"><em>* indicates required</em></p>
+                <div class="contactBox1">
+                    <!-- First Name -->
+                    <label for="fname">First Name*
+                        <input type="text" class="inputWidth" id="fname" name="fname" required>
+                    </label>
+                    <!-- Last Name -->
+                    <label for="lname">Last Name*
+                        <input type="text" class="inputWidth" id="lname" name="lname" required>
+                    </label>
+                </div>
+                <div class="contactBox2">
+                    <!-- Email -->
+                    <label for="email">Email*
+                        <input type="email" class="inputWidth" id="email" name="email" placeholder="youremail@domain.com" required>
+                    </label>
+                    <!-- Phone -->
+                    <label for="phone">Phone Number
+                        <input type="tel" class="inputWidth" id="phone" name="phone">
+                    </label>
+                </div>
+                    <label id="message" for="contactDescription">Your Message*
+                        <textarea name="contactDescription" class="inputWidth" id="contactDescription" cols="30" rows="5" required></textarea>
+                    </label>
+                <!-- Submit -->
+                <input type="submit" id="submit" class="hoverZoom" value="Submit my Message">
+                <input type="hidden" name="hiddenDate" id="hiddenDate" value="">
+            </form>
+            <hr>
+        <!-- Chamber Info -->
+            <div class="chamberInfo">
+                <h3 class="chamberInfoTitle">Visit Us!</h3>
+                <!-- Chamber Name -->
+                <h4>Syracuse City Chamber of Commerce</h4>
+                <!-- Chamber Contact Info -->
+                <p class="chamberEmail hoverZoom">✉ info@cusecham.org</p>
+                <p class="chamberPhone hoverZoom">☏ (123) 456-7890</p>
+                <div class="hoverZoom">
+                    <a href="https://www.google.com/maps/place/Syracuse,+UT/@41.0948008,-112.1278491,11.82z/data=!4m5!3m4!1s0x8752fd0925f39bdd:0x66de35e949280ee1!8m2!3d41.0893878!4d-112.0646657?hl=en" target="_blank">
+                        <p class="chamberAddress">123 Main St. Syracuse, UT 84075</p>
+                        <img src="images/map_picture.webp" alt="Link to Map Directions" class="map">
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
-<!-- FOOTER -->   
+<!-- FOOTER -->
 <footer>
     <figure>
-        <a href="./index.html"><img class="hoverZoom footerLogo" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle."></a>
+        <a href="./index.html"><img class="footerLogo hoverZoom" src="./images/chamber_logo176.webp" alt="Chamber's Logo. It shows line art of three people in front of a building, both inside a target, all inside another circle."></a>
     </figure>
     <div class="footerBox1">
         <div class="footerTitle">
             <h2>Syracuse City Chamber of Commerce</h2>
         </div>
-        <h2 class="chamberAddress">123 Main St.<br>
-            Syracuse, UT 84075
-        </h2>
+        <h2 class="chamberAddress">123 Main St. Syracuse, UT 84075</h2>
     </div>
     <div class="footerBox2">
         <h2 class="chamberEmail hoverZoom">✉ info@cusecham.org</h2>
@@ -88,7 +139,7 @@
     </div>
 </footer>
 
-<script src="scripts/directory.js"></script>
+<!-- JavaScript Sources -->
 <script src="scripts/scripts.js"></script>
 </body>
 </html>
