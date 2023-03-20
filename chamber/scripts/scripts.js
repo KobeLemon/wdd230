@@ -81,7 +81,7 @@ function buildMemberArray(companies) {
 			newArray.push(item);
 		}
 	})
-	console.log(newArray);
+	// console.log(newArray);
 	return newArray;
 }
 
@@ -115,32 +115,32 @@ const displaySpotlightSingle = (slName, slDescription, slLogo, slWebsite, slPhon
 
 const displaySpotlightsAll = (companies) => {
 	let randomNum1 = randomNumber(companies);
-	console.log(`randomNum1: ${randomNum1}`);
+	// console.log(`randomNum1: ${randomNum1}`);
 	let random1 = companies[randomNum1];
-	console.log(`Random1:`);
-	console.table(random1);
+	// console.log(`Random1:`);
+	// console.table(random1);
 	let randomNum2 = randomNumber(companies);
-	console.log(`randomNum2: ${randomNum2}`);
+	// console.log(`randomNum2: ${randomNum2}`);
 	let random2 = companies[randomNum2];
-	console.log(`Random2:`);
-	console.table(random2);
+	// console.log(`Random2:`);
+	// console.table(random2);
 	let randomNum3 = randomNumber(companies);
-	console.log(`randomNum3: ${randomNum3}`);
+	// console.log(`randomNum3: ${randomNum3}`);
 	let random3 = companies[randomNum3];
-	console.log(`Random3:`);
-	console.table(random3);
+	// console.log(`Random3:`);
+	// console.table(random3);
 
 	// These "while" loops check if two spotlights are the same & if true: it will pick a new number until they are different, then it will check the next loop, and then the next, & if all three spotlights are different, it will build the spotlights.
 	while (random1 == random2) {
 		random2 = companies[randomNumber(companies)];
-		console.table(`Random2: ${random2}`);
+		// console.table(`Random2: ${random2}`);
 		if (random1 != random2) {
 			break
 		}
 	}
 	while (random1 == random3) {
 		random3 = companies[randomNumber(companies)];
-		console.table(`Random3: ${random3}`);
+		// console.table(`Random3: ${random3}`);
 		if (random1 != random2) {
 			break
 		}
@@ -148,7 +148,7 @@ const displaySpotlightsAll = (companies) => {
 	
 	while (random2 == random3) {
 		random3 = companies[randomNumber(companies)];
-		console.table(`Random3: ${random3}`);
+		// console.table(`Random3: ${random3}`);
 		if (random2 != random3) {
 			break
 		}
