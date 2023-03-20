@@ -10,7 +10,7 @@
             "jobTitle": "Owner",
             "businessName": "Hug-Hes Cafe",
             "businessDescription": "American Fine Dining",
-            "membership": "Silver Membership",
+            "membership": "Silver",
             "logo": "images/member_logo/hughescafelogo.webp",
             "chamberRep": "images/member_rep/stockperson1.webp"
         },
@@ -20,11 +20,11 @@
             "email": "jacksonjb@pearsonauto.com",
             "phone": "(801) 216-4538",
             "address": "123 Main St, Syracuse, UT 84075",
-            "website": "www.facebook.com/PearsonAuto",
+            "website": "facebook.com/PearsonAuto",
             "jobTitle": "Manager",
             "businessName": "Pearson Auto",
             "businessDescription": "Automotive Repair",
-            "membership": "Gold Membership",
+            "membership": "Gold",
             "logo": "images/member_logo/pearsonlogo.webp",
             "chamberRep": "images/member_rep/stockperson2.webp"
         },
@@ -38,7 +38,7 @@
             "jobTitle": "Lead Manager",
             "businessName": "The Rush Funplex",
             "businessDescription": "Amusement Park/Arcade",
-            "membership": "Gold Membership",
+            "membership": "Gold",
             "logo": "images/member_logo/rushfunplex.webp",
             "chamberRep": "images/member_rep/stockperson3.webp"
         },
@@ -52,7 +52,7 @@
             "jobTitle": "Owner",
             "businessName": "Austen's Bakery",
             "businessDescription": "Pastry Bakery",
-            "membership": "Bronze Membership",
+            "membership": "Bronze",
             "logo": "images/member_logo/stocklogo1.webp",
             "chamberRep": "images/member_rep/stockperson4.webp"
         },
@@ -66,7 +66,7 @@
             "jobTitle": "Owner",
             "businessName": "Choose A Dream Foundation",
             "businessDescription": "Non-Profit Charity",
-            "membership": "Non-Profit Membership",
+            "membership": "Non-Profit",
             "logo": "images/member_logo/stocklogo2.webp",
             "chamberRep": "images/member_rep/stockperson5.webp"
         },
@@ -80,7 +80,7 @@
             "jobTitle": "Owner",
             "businessName": "Little Teddy Day Care",
             "businessDescription": "Child Care",
-            "membership": "Bronze Membership",
+            "membership": "Silver",
             "logo": "images/member_logo/stocklogo3.webp",
             "chamberRep": "images/member_rep/stockperson6.webp"
         },
@@ -94,7 +94,7 @@
             "jobTitle": "CEO",
             "businessName": "Syracuse Chiropractic",
             "businessDescription": "Chiropractor",
-            "membership": "Silver Membership",
+            "membership": "Silver",
             "logo": "images/member_logo/stocklogo4.webp",
             "chamberRep": "images/member_rep/stockperson7.webp"
         },
@@ -108,7 +108,7 @@
             "jobTitle": "Owner",
             "businessName": "Magic Housekeeping",
             "businessDescription": "Cleaning Services",
-            "membership": "Silver Membership",
+            "membership": "Bronze",
             "logo": "images/member_logo/stocklogo5.webp",
             "chamberRep": "images/member_rep/stockperson8.webp"
         },
@@ -122,9 +122,51 @@
             "jobTitle": "Partner",
             "businessName": "Larsen & Carson Attorneys",
             "businessDescription": "Injury Attorney",
-            "membership": "Gold Membership",
+            "membership": "Gold",
             "logo": "images/member_logo/stocklogo6.webp",
             "chamberRep": "images/member_rep/stockperson9.webp"
+        },
+        {
+            "fname": "Sarah",
+            "lname": "Jenkins",
+            "email": "jenkinssh@queencarwash.com",
+            "phone": "(801) 489-7320",
+            "address": "123 Main St, Syracuse, UT 84075",
+            "website": "www.queencarwash.com.com",
+            "jobTitle": "Site Manager",
+            "businessName": "Queen Car Wash",
+            "businessDescription": "Tunnel Car Wash",
+            "membership": "Silver",
+            "logo": "images/member_logo/stocklogo7.webp",
+            "chamberRep": "images/member_rep/stockperson10.webp"
+        },
+        {
+            "fname": "Alejandro",
+            "lname": "Vasquez",
+            "email": "vasquezai@elotehut.com",
+            "phone": "(801) 176-4302",
+            "address": "123 Main St, Syracuse, UT 84075",
+            "website": "www.elotehut.com",
+            "jobTitle": "Owner",
+            "businessName": "Elote Hut",
+            "businessDescription": "Hispanic Food Truck",
+            "membership": "Gold",
+            "logo": "images/member_logo/stocklogo8.webp",
+            "chamberRep": "images/member_rep/stockperson11.webp"
+        },
+        {
+            "fname": "Cara",
+            "lname": "NiVore",
+            "email": "nivorecj@meateatersunited.org",
+            "phone": "(801) 456-7890",
+            "address": "123 Main St, Syracuse, UT 84075",
+            "website": "www.meateatersunited.org",
+            "jobTitle": "Activist",
+            "businessName": "Meat Eaters United",
+            "businessDescription": "Anti-Environmentalist",
+            "membership": "Non-Profit",
+            "logo": "images/member_logo/stocklogo9.webp",
+            "chamberRep": "images/member_rep/stockperson12.webp"
         }
     ]
 }

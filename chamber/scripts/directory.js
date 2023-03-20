@@ -37,7 +37,7 @@ const displayCompanies = (companies) => {
         email.textContent = company.email;
         address.textContent = company.address;
         website.textContent = company.website;
-        membership.textContent = company.membership;
+        membership.textContent = `${company.membership} Membership`;
 
         // Build the logo
         logo.setAttribute('src', company.logo);
