@@ -34,10 +34,6 @@
         height: fit-content;
     }
 
-    nav ul li:hover, #submit:hover {
-        background-color: BGCOLORHERE;
-    }
-
     .threeDayBox {
         margin-top: 1.5rem;
         height: 110px

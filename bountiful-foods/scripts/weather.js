@@ -54,7 +54,7 @@ function displayResults(weatherData, index, date, temp, humidity, icon, descript
     let iconSrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
     let desc = capitalizeSentence(weatherData.list[index].weather[0].description);
     // console.log(`Weather Description: ${desc}`)
-    console.log(weatherData.list[index].dt_txt)
+    // console.log(weatherData.list[index].dt_txt)
 
     date.innerHTML = `<strong>${todayDate}<strong>`;
     temp.innerHTML = `<strong>${currentTempInt}°F<strong>`;

@@ -97,23 +97,18 @@ nav ul.open li {
 
 #hamburgerBtn span:nth-child(1) {
     display: block;
-    color: COLORHERE;
 }
 
 #hamburgerBtn span:nth-child(2) {
     display: none;
-    color: COLORHERE;
 }
 
 #hamburgerBtn.open span:nth-child(1) {
     display: none;
-    color: COLORHERE;
 }
 
 #hamburgerBtn.open span:nth-child(2) {
     display: block;
-    color: COLORHERE;
-    background-color: COLORHERE;
     padding: 0.3rem;
     border-radius:0.5rem;
 }
@@ -121,7 +116,6 @@ nav ul.open li {
 #primaryNav.open {
     display: flex;
     flex-direction: column;
-    background-color: COLORHERE;
     gap: 2rem;
     font-size: 1.5rem;
 }
@@ -163,7 +157,6 @@ h1, h2 {font-family: 'IBM Plex Serif', serif; text-align: center;}
     top: 7rem;
     left: auto;
     right: auto;
-    color: COLORHERE;
     text-shadow: 0 0 20px white;
 }
 
