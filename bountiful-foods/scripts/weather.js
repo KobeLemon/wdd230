@@ -1,4 +1,3 @@
-// DELETE ALL CONSOLE LOGS WHEN FINAL SUBMIT
 const oneDayIcon = document.getElementById('oneDayIcon');
 const oneDayTemp = document.getElementById('oneDayTemp');
 const oneDayDesc = document.getElementById('oneDayDesc');
@@ -20,11 +19,7 @@ const threeDayDesc1 = document.getElementById('threeDayDesc1')
 const threeDayDesc2 = document.getElementById('threeDayDesc2')
 const threeDayDesc3 = document.getElementById('threeDayDesc3')
 
-// CHANGE TO CARLSBAD AREA
 const url = 'https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=659d1abc1a1e9d987421cfc8b88e65fc&lat=33.16226899409092&lon=-117.34900482240532';
-// Index 7 for 1st day
-// Index 15 for 2nd Day
-// Index 23 for 3rd Day
 
 async function apiFetch(){
     try{
@@ -32,9 +27,9 @@ async function apiFetch(){
         if (response.ok){
             const data = await response.json();
             // console.log(data);
-            displayResults(data, 0, today, oneDayTemp, oneDayHumidity, oneDayIcon, oneDayDesc); // today
-            displayResults(data, 7, day1, threeDayTemp1, threeDayHumidity1, threeDayIcon1, threeDayDesc1); // 1st day 7
-            displayResults(data, 15, day2, threeDayTemp2, threeDayHumidity2, threeDayIcon2, threeDayDesc2); // 2nd day 15
+            displayResults(data, 0, today, oneDayTemp, oneDayHumidity, oneDayIcon, oneDayDesc);
+            displayResults(data, 7, day1, threeDayTemp1, threeDayHumidity1, threeDayIcon1, threeDayDesc1);
+            displayResults(data, 15, day2, threeDayTemp2, threeDayHumidity2, threeDayIcon2, threeDayDesc2);
             displayResults(data, 23, day3, threeDayTemp3, threeDayHumidity3, threeDayIcon3, threeDayDesc3);
         }else{
             throw Error(await response.text());
@@ -75,5 +70,9 @@ function capitalizeSentence(sentence) {
     })
     return newString = newString.join(' ');
 }
+
+let recipeCount = localStorage.getItem("recipeCount");
+console.log(recipeCount);
+document.getElementById('drinkAmountNumber').textContent = recipeCount; 
 
 apiFetch()

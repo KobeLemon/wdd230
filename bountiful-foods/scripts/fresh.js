@@ -1,7 +1,8 @@
 // THIS FILE IS STILL IN DEVELOPMENT
 const fruiturl = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
-// let orderCount = Number(localStorage.getItem('drinkCount')) || 0;
+let recipeCount = localStorage.getItem("recipeCount");
+// console.log(`recipeCount: ${recipeCount}`);
 
 async function getfruitData () {
     const response = await fetch(fruiturl);
@@ -34,9 +35,9 @@ formSubmit.addEventListener('submit', (event) => {
 	// const response = fetch(fruiturl);
     // const data = response.json();
 	
-	// console.table(`fruit1: ${fruit1}`);
-	// console.table(`fruit2: ${fruit2}`);
-	// console.table(`fruit3: ${fruit3}`);
+	// console.log(`fruit1: ${fruit1}`);
+	// console.log(`fruit2: ${fruit2}`);
+	// console.log(`fruit3: ${fruit3}`);
 	
 	// const recipeInfo = document.getElementById('recipeInfo');
 	// const nutritionInfo = document.getElementById('nutritionInfo')
@@ -90,10 +91,8 @@ formSubmit.addEventListener('submit', (event) => {
 	// nutritionInfo.appendChild(sugarElement);
 	// nutritionInfo.appendChild(calories1Element);
 
-	// orderCount++
-    // localStorage.setItem('drinkCount', orderCount);
-
-	// document.getElementById('drinkAmountNumber').innerHTML = drinkCount;
+	localStorage.setItem('recipeCount', recipeCount++);
+	// console.log(`recipeCount: ${recipeCount}`);
 });
 
 getfruitData();

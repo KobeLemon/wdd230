@@ -34,7 +34,6 @@ header h1 {
     grid-row: 1 / span 1;
     margin: 1rem 0rem 0rem 2rem;
     max-height: 138px;
-    /* width: 138px; */
 }
 
 .socialMediaLinks a {
@@ -150,24 +149,6 @@ h1, h2 {font-family: 'IBM Plex Serif', serif; text-align: center;}
 
 .centerText {
     text-align: center;
-}
-
-.heroTitle {
-    position: absolute;
-    top: 7rem;
-    left: auto;
-    right: auto;
-    text-shadow: 0 0 20px white;
-}
-
-.overlay {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    bottom: 1rem;
-    font-weight: bold;
-    font-size: 2rem;
-    height: fit-content;
 }
 
 .card {
