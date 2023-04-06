@@ -1,3 +1,6 @@
+let recipeCount = Number(localStorage.getItem("recipeCount"));
+document.getElementById('drinkAmountNumber').innerHTML = recipeCount;
+
 const oneDayIcon = document.getElementById('oneDayIcon');
 const oneDayTemp = document.getElementById('oneDayTemp');
 const oneDayDesc = document.getElementById('oneDayDesc');
@@ -46,7 +49,7 @@ function displayResults(weatherData, index, date, temp, humidity, icon, descript
     let todayDate = weatherData.list[index].dt_txt;
     let humidityInt = weatherData.list[index].main.humidity.toFixed(0);
     // console.log(`humidityInt: ${humidityInt}`);
-    let iconSrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
+    let iconSrc = `https://openweathermap.org/img/w/${weatherData.list[index].weather[0].icon}.png`;
     let desc = capitalizeSentence(weatherData.list[index].weather[0].description);
     // console.log(`Weather Description: ${desc}`)
     // console.log(weatherData.list[index].dt_txt)
@@ -70,9 +73,5 @@ function capitalizeSentence(sentence) {
     })
     return newString = newString.join(' ');
 }
-
-let recipeCount = localStorage.getItem("recipeCount");
-console.log(recipeCount);
-document.getElementById('drinkAmountNumber').textContent = recipeCount; 
 
 apiFetch()

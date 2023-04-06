@@ -222,8 +222,6 @@ h1, h2 {font-family: 'IBM Plex Serif', serif; text-align: center;}
 
 /* Fresh Page Base Styling */
 .freshPage {
-    /* display: flex;
-    justify-content: space-around; */
     margin-bottom: 3rem;
 }
 
