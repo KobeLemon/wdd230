@@ -1,9 +1,10 @@
 /* Phone / Main Sizing */
 
-/* Pink #DC7D7B 
-   Blue #1C4F6A
-   Gray #E1E1E1
-   Brown #A77C51
+/* 
+Pink #DC7D7B
+Blue #1C4F6A
+Gray #E1E1E1
+Brown #A77C51
 */
 
 main {
@@ -16,7 +17,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #DC7D7B;
-    color: whitesmoke;
+    color: white;
 }
 
 header h1 {
@@ -26,13 +27,13 @@ header h1 {
 
 .headerLogo {
     width: 8rem;
-    margin: 1rem;
+    margin: 1rem 0.5rem;
 }
 
 .socialMediaLinks {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    margin: 1rem 0rem 0rem 2rem;
+    margin: 1rem 0rem 0rem 1rem;
     max-height: 138px;
 }
 
@@ -73,7 +74,6 @@ nav ul li a {
 #hamburgerBtn {
     background-color: #1C4F6A;
     color: white;
-    border-radius: 0.5rem;
     height: 50px;
     width: 100%;
 }
@@ -204,20 +204,20 @@ h1, h2 {font-family: 'IBM Plex Serif', serif; text-align: center;}
     height: 150px;
 }
 
-.threeDayBox div p {
-    margin: 0px auto;
-    padding: 0.5rem;
-}
-
 /* End of Single Weather Tile Base Styling */
 
 /* 3 Day Weather Tile Base Styling */
 .threeDayBox {
-    height: 100px;
+    height: fit-content;
 }
 
 #threeDayIcon1, #threeDayIcon2, #threeDayIcon3 {
     height: 85px;
+}
+
+.threeDayBox div p {
+    margin: 0px auto;
+    padding: 0.5rem;
 }
 
 /* Fresh Page Base Styling */
